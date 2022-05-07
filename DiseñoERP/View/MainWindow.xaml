@@ -1,0 +1,1382 @@
+﻿<Window x:Class="DiseñoERP.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiseñoERP"
+        mc:Ignorable="d"
+        Title="DevERP" Height="674" Width="1089"
+        WindowState="Normal"
+        xmlns:materialDesign = "http://materialdesigninxaml.net/winfx/xaml/themes" 
+        TextElement.Foreground= "{DynamicResource MaterialDesignBody}"
+        Background = "{DynamicResource MaterialDesignPaper}" 
+        TextElement.FontWeight= "Medium" 
+        TextElement.FontSize= "14"
+        FontFamily = "{materialDesign:MaterialDesignFont}"
+        WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <ContextMenu x:Key="cmOptionsInvoices">
+            <MenuItem Header="Show" Click="cmActionShow"/>
+            <MenuItem Header="Accounted" Click="cmActionAccounted"/>
+        </ContextMenu>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+
+        <materialDesign:Card Padding="16" Margin="16" Grid.Row="0" Background="#FFD3E3EF">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="imgLogo" Grid.Column="0" Margin="8" Source="/dev_erp.png"/>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="6*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label x:Name="lblNameUser" Grid.Column="0" Content="User:" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                        <TextBlock x:Name="txtNameUser" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,4"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="6*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label x:Name="lblDateUser" Grid.Column="0" Content="Conection:" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="txtDateUser" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,4,0,0"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="btnLogOut" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Cursor="Hand" Click="btn_LogOut_Click">
+                        <DockPanel >
+                            <materialDesign:PackIcon Kind="Logout" VerticalAlignment="Center"/>
+                            <Label Content="Log out" VerticalAlignment="Center"/>
+                        </DockPanel>
+                    </Button>
+                    <ComboBox Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" SelectedIndex="1">
+                        <ListBoxItem Content="Spanish"/>
+                        <ListBoxItem Content="English"/>
+                        <ListBoxItem Content="French"/>
+                        <ListBoxItem Content="German"/>
+                    </ComboBox>
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+
+        <TabControl x:Name="tbn_General" Grid.Row="1" Height="Auto" Width="Auto" TabStripPlacement="Left" Margin="10">
+            <TabItem x:Name="tbi_Home" Padding="10">
+                <TabItem.Header>
+                    <DockPanel HorizontalAlignment="Left">
+                        <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" Foreground="#FF4078A2"/>
+                        <Label Content="Home       " VerticalAlignment="Center"/>
+                    </DockPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Content="Welcome to" FontSize="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+                    <Image Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/dev_erp.png" Margin="100"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Profile" Padding="10">
+                <TabItem.Header>
+                    <DockPanel>
+                        <materialDesign:PackIcon Kind="CogOutline"  VerticalAlignment="Center" Foreground="#FF4078A2"/>
+                        <Label Content="Profile       " VerticalAlignment="Center"/>
+                    </DockPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Ellipse Grid.Column="0" Height="75" Width="75">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="/avatar-ejemplo.jpg" Stretch="Uniform"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Content="Hello, Dani" FontStyle="Italic" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                            <Label Grid.Row="1" Content="Here you will find all the information for your profile" FontStyle="Oblique" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <materialDesign:Card Padding="16" Margin="35" Grid.Column="2" Background="#FFD3E3EF">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Content="Change your username" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0"/>
+                                <TextBox x:Name="txtNewUserName"  materialDesign:HintAssist.Hint="New Name"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1"/>
+                                <PasswordBox x:Name="pwdOldPassword"  materialDesign:HintAssist.Hint="Old Password"  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3"/>
+                                <PasswordBox x:Name="pwdNewPassword"  materialDesign:HintAssist.Hint="New password"  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" HorizontalAlignment="Left"  VerticalAlignment="Top" Grid.Row="4"/>
+                                <PasswordBox x:Name="pwdRepeatNewPassword"  materialDesign:HintAssist.Hint="Repeat password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="5"/>
+                                <Label Content="Change your password" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2"/>
+                                <Button x:Name="btnChangePassword" Content="Commit changes" HorizontalAlignment="Center" Grid.Row="6" FontSize="10" VerticalAlignment="Bottom" Click="btnChangePassword_Click"/>
+                            </Grid>
+                        </materialDesign:Card>
+
+                        <materialDesign:Card Padding="16" Margin="35" Grid.Column="0" Grid.ColumnSpan="2" Background="#FFD3E3EF">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="2*"/>
+                                </Grid.RowDefinitions>
+                                <Label Content="Personal information" Grid.Row="0" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="txtUserID"  materialDesign:HintAssist.Hint="User ID"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0"/>
+                                    <TextBox x:Name="txtUser"  materialDesign:HintAssist.Hint="Username"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+                                    <TextBox x:Name="txtUserName"  materialDesign:HintAssist.Hint="Name"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="2"/>
+                                    <TextBox x:Name="txtSurname"  materialDesign:HintAssist.Hint="Surname"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="3"/>
+                                </Grid>
+
+                                <Grid Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="3*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <GroupBox Grid.Column="0" Header="Roles">
+                                        <ListBox x:Name="lb_roles_profile" Margin="6"/>
+                                    </GroupBox>
+                                </Grid>
+
+                                <Label Content="Professional information" Grid.Row="2" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                            </Grid>
+                        </materialDesign:Card>
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tbi_User"  Padding="10">
+                <TabItem.Header>
+                    <DockPanel>
+                        <materialDesign:PackIcon Kind="User" VerticalAlignment="Center" Foreground="#FF4078A2"/>
+                        <Label Content="Users         " VerticalAlignment="Center"/>
+                    </DockPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBox x:Name="tbSearchUser" Grid.Column="0" materialDesign:HintAssist.Hint="Search.." Margin="12" VerticalAlignment="Bottom" Foreground="#FF565252" Cursor="IBeam"/>
+
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="cbSearch_User" Grid.Column="0" Margin="12"/>
+                                    <Button Grid.Column="1" Width="35" Height="35" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Click="btnSearchUser">
+                                        <Image Source="/View/iconSearch.png" Margin="6"/>
+                                    </Button>
+                                </Grid>
+
+
+                            </Grid>
+                        </Grid>
+
+                        <DataGrid x:Name="dgvUsers" Margin="8" Grid.Column="0" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="fillUserData">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding id_user}" Header="Iduser"/>
+                                <DataGridTextColumn Binding="{Binding name}" Header="Name"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="btnAdd" Content="New" Grid.Column="0" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Top" Click="btnAdd_Click"/>
+                            <Button x:Name="btnDelete" Content="Delete" Grid.Column="1" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Top" Click="btnDelete_Click"/>
+                            <Button x:Name="btnModify" Content="Modify" FontSize="12" Grid.Column="2" Margin="3,10,3,0" VerticalAlignment="Top" Click="btnModify_Click"/>
+                        </Grid>
+
+                        <Button x:Name="btnUpdateWindows" Grid.Column="1" Width="35" Height="35" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalContentAlignment="Center" Margin="10"
+                                    Click="btnUpdateWindows_Click" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand">
+                            <Image Source="/View/iconRefresh.png" Margin="6"/>
+                        </Button>
+
+                    </Grid>
+
+                    <Grid Grid.Column="1" Grid.RowSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="14*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Content="User data" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="16"/>
+
+                        <materialDesign:Card Padding="10" Margin="16" Grid.Row="1" Background="#FFD3E3EF">
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="ID: " VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_id_user" Grid.Column="1" VerticalAlignment="Center"/>
+
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Name:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox Name="tb_name_user" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <GroupBox Grid.Row="2" Header="Roles" Margin="12">
+
+                                    <ListBox x:Name="lb_roles_users" Margin="6" VerticalAlignment="Top"  HorizontalAlignment="Left" />
+
+                                </GroupBox>
+                            </Grid>
+                        </materialDesign:Card>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="tbi_Customer" Padding="10" >
+                <TabItem.Header>
+                    <DockPanel HorizontalAlignment="Left">
+                        <materialDesign:PackIcon Kind="Store"  VerticalAlignment="Center" Foreground="#FF4078A2"/>
+                        <Label Content="Customers" VerticalAlignment="Center"/>
+                    </DockPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBox x:Name="tb_SearchCustomer" Grid.Column="0"  materialDesign:HintAssist.Hint="Search.."  Margin="12" VerticalAlignment="Bottom" Foreground="#FF565252" Cursor="IBeam"/>
+
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="cb_SearchBy" Grid.Column="0" Margin="12"/>
+                                    <Button Grid.Column="1" Width="35" Height="35" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Click="btnSearchCustomer">
+                                        <Image Source="/View/iconSearch.png" Margin="6"/>
+                                    </Button>
+                                </Grid>
+                                
+                                
+                            </Grid>
+
+                            <Button x:Name="btnFillCustomer" Grid.Column="1" Content="Fill table" HorizontalAlignment="Right" Click="fillCustomerTable"/>
+                        </Grid>
+
+
+
+                        <DataGrid x:Name="dgv_customers" Margin="8" Grid.Column="0" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="fillCustomerData" MouseDoubleClick="selectCustomerOrder">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding idCustomer}" Header="ID"/>
+                                <DataGridTextColumn Binding="{Binding NIF}" Header="NIF"/>
+                                <DataGridTextColumn Binding="{Binding name}" Header="Name"/>
+                                <DataGridTextColumn Binding="{Binding surname}" Header="Surname"/>
+                                <DataGridTextColumn Binding="{Binding phone}" Header="Phone"/>
+                                <DataGridTextColumn Binding="{Binding email}" Header="Email"/>
+                                <DataGridTextColumn Binding="{Binding address}" Header="Adress"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+
+
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="btnAddCustomer" Content="New" Grid.Column="0" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Top" Click="btnAdd_Customer"/>
+                            <Button x:Name="btnDeleteCustomer" Content="Delete" Grid.Column="1" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Top" Click="btnDelete_Customer"/>
+                            <Button x:Name="btnModify_Customer" Content="Modify" FontSize="12" Grid.Column="2" Margin="3,10,3,0" VerticalAlignment="Top" Click="click_btnModify_Customer"/>
+                        </Grid>
+
+                        <Button Grid.Column="1" Width="35" Height="35" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalContentAlignment="Center" Margin="10"
+                                    Click="btnUpdateWindowsCustomer_Click" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand">
+                            <Image Source="/View/iconRefresh.png" Margin="6"/>
+                        </Button>
+
+                    </Grid>
+
+                    <Grid Grid.Column="1" Grid.RowSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="14*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Content="Client data" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="16"/>
+
+                        <materialDesign:Card Padding="16" Margin="16" Grid.Row="1" Background="#FFD3E3EF">
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="NIF:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_NIF" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Name:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_nameCustomer" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Surname:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_surname" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+                                <Grid Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Phone:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_phone" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+                                <Grid Grid.Row="4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Email:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_email" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Button x:Name="btnChange_Location" Grid.Row="5" Content="Change location" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="10" Margin="8" Click="btnChangeLocation"/>
+
+                                <Grid Grid.Row="6">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Region:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        <Grid>
+                                            <ComboBox Name="cboRegions" VerticalAlignment="Center" SelectionChanged="fillComboStates">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding nameRegion}"/>
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </Grid>
+                                    </StackPanel>
+
+                                </Grid>
+
+                                <Grid Grid.Row="7">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="State:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        <Grid>
+                                            <ComboBox Name="cboStates" VerticalAlignment="Center" SelectionChanged="fillComboCities">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding nameState}"/>
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </Grid>
+                                    </StackPanel>
+                                </Grid>
+
+                                <Grid Grid.Row="8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="City:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        <Grid>
+                                            <ComboBox Name="cboCities" VerticalAlignment="Center" SelectionChanged="fillComboZipCode">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding nameCity}"/>
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </Grid>
+                                    </StackPanel>
+                                </Grid>
+
+                                <Grid Grid.Row="9">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="ZIP Code:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_ZipCode" Grid.Column="1" VerticalAlignment="Center"/>
+                                    <Button x:Name="btnSearch_ZipCode" Grid.Column="2" Content="Search" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="10" Margin="6" Click="btnSearchZipCode_Click"/>
+                                </Grid>
+
+                                <Grid Grid.Row="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        <Grid>
+                                            <ComboBox Name="cboZipCodes" VerticalAlignment="Center">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding zipCode}"/>
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </Grid>
+                                    </StackPanel>
+
+                                </Grid>
+
+                                <Grid Grid.Row="11">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Address:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_address" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Button x:Name="btnSave_Customers" Content="Save" Grid.Row="12" HorizontalAlignment="Right" VerticalAlignment="Top" Height="27" Margin="0,5,0,0" Width="65" Click="btnSave_Customer"/>
+
+                            </Grid>
+
+
+
+                        </materialDesign:Card>
+
+                    </Grid>
+
+
+
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="tbi_Products" Padding="10" >
+                <TabItem.Header>
+                    <DockPanel>
+                        <materialDesign:PackIcon Kind="Basket"  VerticalAlignment="Center" Foreground="#FF4078A2"/>
+                        <Label Content="Products   " VerticalAlignment="Center"/>
+                    </DockPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBox x:Name="tb_SearchByProduct" Grid.Column="0"  materialDesign:HintAssist.Hint="Search.."  Margin="12" VerticalAlignment="Bottom" Foreground="#FF565252" Cursor="IBeam"/>
+
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="cb_SearchBy_Product" Grid.Column="0" Margin="12"/>
+                                    <Button  Grid.Column="1" Width="35" Height="35" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Click="btnSearchProduct">
+                                        <Image Source="/View/iconSearch.png" Margin="6"/>
+                                    </Button>
+                                </Grid>
+
+
+                            </Grid>
+                        </Grid>
+
+
+
+                        <DataGrid x:Name="dgv_products" Margin="8" Grid.Column="0" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="fillProductData" MouseDoubleClick="selectProductOrder">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding Id_product}" Header="ID"/>
+                                <DataGridTextColumn Binding="{Binding Description}" Header="Description"/>
+                                <DataGridTextColumn Binding="{Binding SizeProduct.messures}" Header="Messures"/>
+                                <DataGridTextColumn Binding="{Binding MaterialProduct.nameMaterial}" Header="Material"/>
+                                <DataGridTextColumn Binding="{Binding Price}" Header="Price"/>
+                                <DataGridTextColumn Binding="{Binding WholesalePrice}" Header="Wholesale Price"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+
+
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="btnAddProduct" Content="New" Grid.Column="0" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Top" Click="btnNewProduct"/>
+                            <Button x:Name="btnDelete_Product" Content="Delete" Grid.Column="1" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Top" Click="btnDeleteProduct"/>
+                            <Button x:Name="btnModifyProduct" Content="Modify" FontSize="12" Grid.Column="2" Margin="3,10,3,0" VerticalAlignment="Top" Click="btn_ModifyProduct"/>
+                        </Grid>
+
+                        <Button Grid.Column="1" Width="35" Height="35" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalContentAlignment="Center" Margin="10"
+                                    Click="btnUpdateWindowsProduct_Click" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand">
+                            <Image Source="/View/iconRefresh.png" Margin="6"/>
+                        </Button>
+
+                    </Grid>
+
+                    <Grid Grid.Column="1" Grid.RowSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="14*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Content="Product data" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="16"/>
+
+                        <materialDesign:Card Padding="16" Margin="16" Grid.Row="1" Background="#FFD3E3EF">
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="ID:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_idProduct" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Description:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox Name="tb_descriptionProduct" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Material:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        <Grid>
+                                            <ComboBox x:Name="cb_material" VerticalAlignment="Center">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding nameMaterial}"/>
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </Grid>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Messures:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        <Grid>
+                                            <ComboBox x:Name="cb_MessuresProduct" VerticalAlignment="Center">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding messures}"/>
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </Grid>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Grid.Row="4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Whosale price:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox Name="tb_WholesalePrice" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Price:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_PriceProduct" Grid.Column="1" VerticalAlignment="Center"/>
+
+                                </Grid>
+
+
+                                <Button Name="btnSaveProduct" Content="Save" Grid.Row="12" HorizontalAlignment="Right" VerticalAlignment="Top" Height="27" Margin="0,5,0,0" Width="65" Click="btn_SaveProduct"/>
+                            </Grid>
+                        </materialDesign:Card>
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="tbi_Supliers" Padding="10" >
+                <TabItem.Header>
+                    <DockPanel>
+                        <materialDesign:PackIcon Kind="TruckShipping"  VerticalAlignment="Center" Foreground="#FF4078A2"/>
+                        <Label Content="Supliers    " VerticalAlignment="Center"/>
+                    </DockPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.RowSpan="2" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBox  Grid.Column="0" materialDesign:HintAssist.Hint="Search.."  Margin="12" VerticalAlignment="Bottom" Foreground="#FF565252" Cursor="IBeam"/>
+
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox  Grid.Column="0" Margin="12"/>
+                                    <Button Grid.Column="1" Width="35" Height="35" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Click="btnSearchCustomer">
+                                        <Image Source="/View/iconSearch.png" Margin="6"/>
+                                    </Button>
+                                </Grid>
+
+
+                            </Grid>
+                        </Grid>
+
+
+
+                        <DataGrid x:Name="dgv_Supliers" Margin="8" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="fillSuplierData">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding DNI}" Header="DNI"/>
+                                <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
+                                <DataGridTextColumn Binding="{Binding Surname}" Header="Surname"/>
+                                <DataGridTextColumn Binding="{Binding Location}" Header="Location"/>
+                                <DataGridTextColumn Binding="{Binding Direction}" Header="Direction"/>
+                                <DataGridTextColumn Binding="{Binding Phone}" Header="Phone"/>
+                                <DataGridTextColumn Binding="{Binding Email}" Header="Email"/>
+                                
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+
+
+                    <Grid Grid.Column="1" Grid.RowSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="14*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Content="Suplier data" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="16"/>
+
+                        <materialDesign:Card Padding="16" Margin="16" Grid.Row="1" Background="#FFD3E3EF">
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Label Content="Personal information" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="DNI:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_DNI_suplier" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Name:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_name_suplier" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Surname:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_surname_suplier" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="5">
+                                    <Label Content="Contact" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                </Grid>
+
+                                <Grid Grid.Row="6">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Phone:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_phone_suplier" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+                                <Grid Grid.Row="7">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Email:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_email_suplier" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="9">
+                                    <Label Content="Location" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                </Grid>
+
+                                <Grid Grid.Row="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="City:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_city_suplier" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="11">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Adress:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_adress_suplier" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+                            </Grid>
+                        </materialDesign:Card>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="tbi_Orders" Padding="10" >
+                <TabItem.Header>
+                    <DockPanel>
+                        <materialDesign:PackIcon Kind="CubeSend"  VerticalAlignment="Center" Foreground="#FF4078A2"/>
+                        <Label Content="Orders        " VerticalAlignment="Center"/>
+                    </DockPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBox x:Name="tb_SearchByOrders" Grid.Column="0"  materialDesign:HintAssist.Hint="Search.." Margin="12" VerticalAlignment="Bottom" Foreground="#FF565252" Cursor="IBeam"/>
+
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="cb_SearchBy_Orders" Grid.Column="0" Margin="12"/>
+                                    <Button  Grid.Column="1" Width="35" Height="35" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Click="btnSearchOrder" >
+                                        <Image Source="/View/iconSearch.png" Margin="6"/>
+                                    </Button>
+                                </Grid>
+
+
+                            </Grid>
+                        </Grid>
+
+
+
+                        <DataGrid x:Name="dgv_orders" Margin="8" Grid.Column="0" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="fillSlaveOrders">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding idOrder}" Header="ID"/>
+                                <DataGridTextColumn Binding="{Binding date}" Header="Date"/>
+                                <DataGridTextColumn Binding="{Binding prepaid}" Header="Prepaid"/>
+                                <DataGridTextColumn Binding="{Binding total}" Header="Total"/>
+                                <DataGridTextColumn Binding="{Binding status.nameStatus}" Header="Status">
+                                    <DataGridTextColumn.CellStyle>
+                                        <Style TargetType="{x:Type DataGridCell}">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding status.nameStatus}" Value="Confirmed">
+                                                    <Setter Property="Background" Value="#90a4ae"/>
+                                                    <Setter Property="BorderBrush" Value="#90a4ae"/>
+                                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                                    <Setter Property="Margin" Value="2"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding status.nameStatus}" Value="Labeled">
+                                                    <Setter Property="Background" Value="#ffab91"/>
+                                                    <Setter Property="BorderBrush" Value="#ffab91"/>
+                                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                                    <Setter Property="Margin" Value="4"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding status.nameStatus}" Value="Sent">
+                                                    <Setter Property="Background" Value="#81d4fa"/>
+                                                    <Setter Property="BorderBrush" Value="#81d4fa"/>
+                                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                                    <Setter Property="Margin" Value="4"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding status.nameStatus}" Value="Invoiced">
+                                                    <Setter Property="Background" Value="#66bb6a"/>
+                                                    <Setter Property="BorderBrush" Value="#66bb6a"/>
+                                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                                    <Setter Property="Margin" Value="4"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </DataGridTextColumn.CellStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+
+
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="btnAddOrders" Content="New" Grid.Column="0" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Top" Click="btnAddOrders_Click"/>
+                            <Button x:Name="btnDelete_Orders" Content="Delete" Grid.Column="1" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Top" Click="deleteOrder"/>
+                            <Button x:Name="btnModifyOrders" Content="Modify" FontSize="12" Grid.Column="2" Margin="3,10,3,0" VerticalAlignment="Top" Click="modifyOrder"/>
+                        </Grid>
+
+                        <Button Grid.Column="1" Width="35" Height="35" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalContentAlignment="Center" Margin="10"
+                                     Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Click="updateOrder">
+                            <Image Source="/View/iconRefresh.png" Margin="6"/>
+                        </Button>
+
+                    </Grid>
+
+                    <Grid Grid.Column="1" Grid.RowSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="14*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Content="Orders data" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="16"/>
+
+                        <materialDesign:Card Padding="16" Margin="16" Grid.Row="1" Background="#FFD3E3EF">
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="ID:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_idOrder" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Client:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_ClientOrder" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Date:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_DateOrder" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+                                <Grid Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Payment Method:" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+                                    <TextBox x:Name="tb_paymentMethod" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+                                <Grid Grid.Row="4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" Content="Total ($):" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox x:Name="tb_TotalOrder" Grid.Column="1" VerticalAlignment="Center"/>
+                                </Grid>
+
+
+                                <Grid Grid.Row="5" Grid.RowSpan="4">
+                                    <DataGrid Margin="4" Name="dg_productsOrders" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Background="#FFD3E3EF">
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Binding="{Binding description}" Header="Product"/>
+                                            <DataGridTextColumn Binding="{Binding amount}" Header="Amount"/>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+                                </Grid>
+
+                                <Grid Grid.Row="9">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <Button x:Name="btn_ConfirmedOrder" Grid.Column="1" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                                     Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Background="#FFFF616F" BorderBrush="#FFFF616F" Click="updateConfirmedStatus">
+                                        <Image Source="/View/check.png" Margin="6"/>
+                                    </Button>
+                                    <Button x:Name="btn_LabeledOrder" Grid.Column="2" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                                     Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Background="#FFFF616F" BorderBrush="#FFFF616F" Click="updateLabeledStatus">
+                                        <Image Source="/View/etiqueta.png" Margin="6"/>
+                                    </Button>
+                                    <Button x:Name="btn_SentOrder" Grid.Column="3" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                                     Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Background="#FFFF616F" BorderBrush="#FFFF616F" Click="updateSentStatus">
+                                        <Image Source="/View/email-fast.png" Margin="6"/>
+                                    </Button>
+                                    <Button x:Name="btn_InvoicedOrder" Grid.Column="4" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                                     Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Background="#FFFF616F" BorderBrush="#FFFF616F" Click="updateInvoicedStatus">
+                                        <Image Source="/View/pago-seguro.png" Margin="6"/>
+                                    </Button>
+
+
+                                </Grid>
+                            </Grid>
+                        </materialDesign:Card>
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tbi_Invoices" Padding="10" >
+                <TabItem.Header>
+                    <DockPanel>
+                        <materialDesign:PackIcon Kind="FileDocumentMultiple"  VerticalAlignment="Center" Foreground="#FF4078A2"/>
+                        <Label Content="Invoices     " VerticalAlignment="Center"/>
+                    </DockPanel>
+                </TabItem.Header>
+                <Grid Margin="36">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="7*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBox x:Name="tbSearchInvoice" Grid.Column="0"  materialDesign:HintAssist.Hint="Search.." Margin="6" VerticalAlignment="Bottom" Foreground="#FF565252" Cursor="IBeam"/>
+
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="cbSearchInvoiceBy" Grid.Column="0" Margin="6"/>
+                                    <Button Grid.Column="1" Width="35" Height="35" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Click="btnSearchInvoice">
+                                        <Image Source="/View/iconSearch.png" Margin="6"/>
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                            <Button  Grid.Column="1" Width="35" Height="35" Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Background="White" Click="printInvoice">
+                                <DockPanel>
+                                    <materialDesign:PackIcon Kind="Printer" Height="20" Width="20" />
+                                </DockPanel>
+                            </Button>
+                        </Grid>
+
+
+                        <DataGrid x:Name="dgv_invoices" Margin="8" Grid.Column="0" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="fillSlaveOrders"  Background="#FFD3E3EF" MouseRightButtonDown="dgv_invoices_MouseRightButtonDown">
+                            <DataGrid.RowStyle>
+                                <Style TargetType="{x:Type DataGridRow}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding accounted}" Value="1" >
+                                            <Setter Property="Background" Value="Green" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding accounted}" Value="0" >
+                                            <Setter Property="Background" Value="#FFD3E3EF" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </DataGrid.RowStyle>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding idInvoice}" Header="Nº Invoice"/>
+                                <DataGridTextColumn Binding="{Binding date}" Header="Fecha"/>
+                                <DataGridTextColumn Binding="{Binding accounted}" Visibility="Hidden"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="7*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="btnAddInvoice" Content="New" Grid.Column="0" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Center" Click="btnNewInvoice"/>
+                            <Button x:Name="btnDeleteInvoices" Content="Delete" Grid.Column="1" Margin="3,10,3,0" FontSize="12" VerticalAlignment="Center" Click="btnDeleteInvoice"/>
+                        </Grid>
+
+                        <Button Grid.Column="1" Width="35" Height="35" HorizontalAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="10"
+                                     Style="{StaticResource MaterialDesignFloatingActionButton}" Cursor="Hand" Click="updateListInvoices">
+                            <Image Source="/View/iconRefresh.png" Margin="6"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>

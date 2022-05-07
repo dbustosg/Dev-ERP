@@ -1,0 +1,899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Title="Welcome to the [TODO: Add project name]" Url="html/e2474bf1-2b65-4bac-aa5b-464bc9b6f0d2.htm" />
+  <HelpTOCNode Id="4849201a-53fd-4386-89d0-99b5b729ad30" Title="Version History" Url="html/4f3f5def-94fd-49aa-9bc5-b0c0bacc5b8a.htm">
+    <HelpTOCNode Title="Version 1.0.0.0" Url="html/4233b81a-d499-4a8b-bc48-42f261be470b.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="8993bad2-0ddc-4cea-b55e-02cc24f54921" Title="Dise&#241;oERP" Url="html/6cddbce6-80eb-7c4d-5def-0387e7483d84.htm">
+    <HelpTOCNode Id="cd5fa7fe-f5ec-44be-8502-9648e467f938" Title="App Class" Url="html/d57e5575-a589-26f3-bef5-092691eee4d6.htm">
+      <HelpTOCNode Title="App Constructor " Url="html/39412ec5-753d-4387-d9f2-025b1acca4bb.htm" />
+      <HelpTOCNode Title="App Properties" Url="html/89b97670-d535-0ff7-4c2f-4d05695e3de7.htm" />
+      <HelpTOCNode Id="c254eb13-0561-4a85-92c2-4181b86f57fb" Title="App Methods" Url="html/16e260fd-ae93-4d25-e3c0-e1d378f06629.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/c2df1483-bf03-a6e4-e66a-93d175d9e53c.htm" />
+        <HelpTOCNode Title="Main Method " Url="html/66b0463e-5ac9-4b48-c0b5-2e59885ad044.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="App Events" Url="html/da69faf6-1209-34b6-34f9-f640218b42a1.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="32dc3f19-e936-4f87-8c3c-969d39199826" Title="Login Class" Url="html/2cc79269-631d-830f-a877-fea5b18670d5.htm">
+      <HelpTOCNode Title="Login Constructor " Url="html/e44628eb-436c-6b6a-3760-6fc3c00b8eae.htm" />
+      <HelpTOCNode Title="Login Properties" Url="html/9a829dbc-d840-5ff8-e6de-b467d1a9dd75.htm" />
+      <HelpTOCNode Id="ce279707-3cf2-4ef2-8385-f35c12bd29b7" Title="Login Methods" Url="html/93d14f5a-06d8-8bd6-8403-1ead6a314154.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/0e148132-2a4e-d9c4-83ad-91d6df1b7197.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Login Events" Url="html/93579150-44ee-8fa6-a890-3b904bfffaba.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="cb7f6291-e788-485e-a0a0-1bbb097487f7" Title="Dise&#241;oERP.Domain" Url="html/c98efb67-9e87-8247-5c0d-fc0f2d52f52e.htm">
+    <HelpTOCNode Id="9478d66b-1c86-4f74-a697-4be13d07a115" Title="City Class" Url="html/15700e63-a0d4-c806-e475-6b4f6a8c290e.htm">
+      <HelpTOCNode Title="City Constructor " Url="html/8648883f-d125-e349-66a8-ec303ba8fd17.htm" />
+      <HelpTOCNode Id="2f39426e-d9bb-4d91-9b8f-de723dca67aa" Title="City Properties" Url="html/351807c2-ccc2-c6ca-c89f-982da15fe141.htm">
+        <HelpTOCNode Title="id_city Property " Url="html/2f7506bd-cd75-7470-a845-d82a117588be.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/342cb591-8004-2625-6483-fbc44c4f3157.htm" />
+        <HelpTOCNode Title="nameCity Property " Url="html/8436242e-baeb-1efe-7fde-099f54692dbd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="City Methods" Url="html/14f71fe8-1e45-f612-3275-53605177cf3e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="46c7bf79-43c3-4187-901a-fba27dd1260f" Title="Invoice Class" Url="html/693fef31-4fe7-d487-9c59-8e688416403d.htm">
+      <HelpTOCNode Id="7607ab6f-a579-484d-b7ba-de9b1c61014b" Title="Invoice Constructor " Url="html/ee49b364-dea9-3a8b-7be0-ec9335e2cad2.htm">
+        <HelpTOCNode Title="Invoice Constructor " Url="html/04677c22-a4f6-8df6-acb6-ba65e9eb2b57.htm" />
+        <HelpTOCNode Title="Invoice Constructor (Int32)" Url="html/11849f8e-5cc2-d273-5412-baae55f6a952.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="434067e3-0186-467c-b6f6-c18e8427ee17" Title="Invoice Properties" Url="html/055ef917-8b62-c95c-253b-f60ec9f8dcec.htm">
+        <HelpTOCNode Title="accounted Property " Url="html/c97095d3-4071-9b47-3f9b-6fb1a34af0d3.htm" />
+        <HelpTOCNode Title="date Property " Url="html/f8e8c669-9178-cd4c-8ae4-b3ff5710acf4.htm" />
+        <HelpTOCNode Title="idInvoice Property " Url="html/57f6c1eb-7b67-3516-a661-1dfe1e7219fe.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/605ad4d4-1cca-e2d1-0ebb-b88dd7350e28.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4b68d98f-26e0-4969-abad-89a1e8f4b965" Title="Invoice Methods" Url="html/6c1952a2-e56a-b963-c247-786f70557b34.htm">
+        <HelpTOCNode Title="checkBeforeInvoiceAccounted Method " Url="html/1d3a7c85-7537-817e-ec61-23902a52673b.htm" />
+        <HelpTOCNode Title="countId Method " Url="html/55438184-0153-5872-7c73-9982e0e8e3cb.htm" />
+        <HelpTOCNode Title="deleteInvoice Method " Url="html/de2b20ed-2f2b-6058-b039-25897e97423a.htm" />
+        <HelpTOCNode Title="insertInvoice Method " Url="html/264ba880-94e2-8c45-157b-1635268761cd.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/66d06ec3-d3c1-9a8a-65ce-38eeed7d3f50.htm" />
+        <HelpTOCNode Title="readInfoInvoice_ToCrystalReport Method " Url="html/9c0c7b28-2ba6-7db1-8b28-4e43eb39e28d.htm" />
+        <HelpTOCNode Title="readInvoice Method " Url="html/4b1579c4-1fb1-22be-79f9-e3315abf15b2.htm" />
+        <HelpTOCNode Title="readSpecificInvoice Method " Url="html/86bf5de5-a1ab-79e4-8a24-bfbee777edf2.htm" />
+        <HelpTOCNode Title="searchIdOrder Method " Url="html/7dff46e6-1eb4-7841-86c5-c02986f3a2bc.htm" />
+        <HelpTOCNode Title="updateAccounted Method " Url="html/e6404957-6e36-546a-1e01-9979d0d3d980.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="de2ef844-bf30-44e5-be1f-35063ce89e2a" Title="MaterialProducts Class" Url="html/3755a009-3d2c-36a8-378a-4c1cdaf03067.htm">
+      <HelpTOCNode Id="2bdec577-e47b-467c-b092-94a0bd7238d2" Title="MaterialProducts Constructor " Url="html/4f60efed-fed6-c70f-d53e-e20fe9addd43.htm">
+        <HelpTOCNode Title="MaterialProducts Constructor " Url="html/3d8a36d4-2d3e-b338-d703-f499161c7391.htm" />
+        <HelpTOCNode Title="MaterialProducts Constructor (Int32)" Url="html/938c18a2-1e5c-1845-dd0a-1977614a2b52.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4b695d03-7b5c-46fe-a777-06fcf0960b12" Title="MaterialProducts Properties" Url="html/2b9477bf-9dab-b60e-1b82-3905d3bf6f78.htm">
+        <HelpTOCNode Title="id_material Property " Url="html/2b4c348c-d941-beef-252e-eb702f704475.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/4051f534-551d-8b23-e229-945318f48ec0.htm" />
+        <HelpTOCNode Title="nameMaterial Property " Url="html/2d1674ce-e50c-835f-b0cb-56f5e73dd8a7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MaterialProducts Methods" Url="html/82deac88-07c4-3417-81dd-c93a16499d6f.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e492e4f2-f5b3-4672-878b-1d445c86ce0d" Title="Order Class" Url="html/3eea13a3-1c9f-62ca-1ccc-e3d99a7ed4e9.htm">
+      <HelpTOCNode Id="41da78f7-88e6-46a5-a400-cc414e33f1e0" Title="Order Constructor " Url="html/0d6c0b2b-61f0-98f6-0bdb-01f5ac81f903.htm">
+        <HelpTOCNode Title="Order Constructor " Url="html/c992d72c-339c-bb12-b3e3-9704380afd44.htm" />
+        <HelpTOCNode Title="Order Constructor (Int32)" Url="html/cdcba70a-659e-f4fa-5124-6d4bef555c1a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dd034f3a-99b1-464f-b2a4-56f566787d9c" Title="Order Properties" Url="html/588516d3-57ef-b93c-6f79-0198f79adc7c.htm">
+        <HelpTOCNode Title="date Property " Url="html/162830db-a4b3-db82-69c9-467053ec682b.htm" />
+        <HelpTOCNode Title="idOrder Property " Url="html/90fa8bb9-0b41-34b0-3e25-36085b0ac1c9.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/4941e196-4570-6ade-d8a8-7624b66dac01.htm" />
+        <HelpTOCNode Title="paymentMethod Property " Url="html/e9b984f8-bb0a-fe03-091f-297c9753d279.htm" />
+        <HelpTOCNode Title="prepaid Property " Url="html/8aef950d-6166-148a-28b3-e83a8b83ffad.htm" />
+        <HelpTOCNode Title="ref_customer Property " Url="html/b0455a4a-fa42-abf2-8a7c-6e25a532fe71.htm" />
+        <HelpTOCNode Title="ref_paymentMethod Property " Url="html/dbba00e4-946c-51a1-1047-bad3ce1caba3.htm" />
+        <HelpTOCNode Title="ref_user Property " Url="html/c47d35da-492d-5271-e4c1-059623aade85.htm" />
+        <HelpTOCNode Title="status Property " Url="html/eb6fa89e-ad8f-2add-1977-801ee50c310f.htm" />
+        <HelpTOCNode Title="total Property " Url="html/a1428f03-886d-1e59-a119-5d68078ceab6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8cac4d15-fa62-429f-a58c-3a32503ca4e9" Title="Order Methods" Url="html/65f8fd73-0080-b499-e909-86963ed0f74b.htm">
+        <HelpTOCNode Title="deleteNoLogicOrder Method " Url="html/b6191e22-8ba3-eabc-4e94-bf05e33c1ebc.htm" />
+        <HelpTOCNode Title="deleteOrder Method " Url="html/912e0227-bb91-5428-a507-d5540433a4d2.htm" />
+        <HelpTOCNode Title="insertOrder Method " Url="html/4e443d34-2ede-ad81-541b-98d8e9f8d7d9.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/2199d92f-059b-1290-0c3f-1c359fb357c4.htm" />
+        <HelpTOCNode Title="readAllOrderProduct_CrystalReport Method " Url="html/cb1099f5-fc75-1c2f-39f7-9aea5bf192da.htm" />
+        <HelpTOCNode Title="readInfoOrder_ToCrystalReport Method " Url="html/a915259b-45b0-b62e-5943-4ef4713974ee.htm" />
+        <HelpTOCNode Title="readOrder Method " Url="html/f4d20e17-6d0e-a27c-a46b-00cb787f2133.htm" />
+        <HelpTOCNode Title="readOrderByInvoice Method " Url="html/57b516b3-ad8c-e05b-d1e9-a9fdf5feb368.htm" />
+        <HelpTOCNode Title="readSpecificOrder Method " Url="html/efe2966a-0dc5-124f-f531-32b9b1f23683.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e4a106be-5cc3-44c8-bd47-026158b873b6" Title="OrderGeneric Class" Url="html/8c3d2f59-8a96-d10b-3016-bfb04d574020.htm">
+      <HelpTOCNode Id="e2c81af2-f38d-44ec-82c9-e7f7e8c653be" Title="OrderGeneric Constructor " Url="html/3ee5e056-4f9f-d9a4-8e83-76513eef52b0.htm">
+        <HelpTOCNode Title="OrderGeneric Constructor " Url="html/9cc09081-1366-ed56-5529-968973ffb1ac.htm" />
+        <HelpTOCNode Title="OrderGeneric Constructor (Int32)" Url="html/c6e17022-618a-0c3a-8db7-a1386464adf1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0b2fe22a-929f-4c00-953a-031a786dca84" Title="OrderGeneric Properties" Url="html/c84cc3c7-1bbc-eb6d-1b0d-01bbf2618482.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/c7726265-a451-4617-09a2-ea46fcb75e6c.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/d80e60cb-3b2c-6635-cd39-417e03ae6845.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/5759d17e-0a08-fd8a-631d-9a4152fb2084.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/e4c0defe-b6cb-2539-cfca-ea1683bd8728.htm" />
+        <HelpTOCNode Title="OrderId Property " Url="html/66a766b8-f8bf-eb6f-222a-49be3e85cb7c.htm" />
+        <HelpTOCNode Title="Price Property " Url="html/a15e6961-8ac9-f1de-ec1c-571e1819f367.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="719dfc56-bbb9-4ee6-b3ea-858935d091b7" Title="OrderGeneric Methods" Url="html/b49e05f3-086a-ec2b-bba1-829db83fe92f.htm">
+        <HelpTOCNode Title="insertOrderProductGeneric Method " Url="html/363f5ac8-d9c3-be6e-c850-3cd6bf87e150.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b4bfe2bd-efe8-4334-842b-f97ea67fd60f" Title="OrderProduct Class" Url="html/49006486-30fa-2b8e-b5cb-eb5a813c51c5.htm">
+      <HelpTOCNode Id="e7ce21d2-50ef-45ab-9369-d0640e3b02d7" Title="OrderProduct Constructor " Url="html/5e9f4d47-6f06-9042-af86-5eeea0bf2e39.htm">
+        <HelpTOCNode Title="OrderProduct Constructor " Url="html/835cc4fe-59ed-ab53-aa69-fb7f0d117574.htm" />
+        <HelpTOCNode Title="OrderProduct Constructor (Int32)" Url="html/04ce9ac7-b503-de77-c27f-efaf7321f83e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="300b29fd-c021-4150-b174-5069610c61e1" Title="OrderProduct Properties" Url="html/2783958f-56ea-e156-61fb-61cd0033e102.htm">
+        <HelpTOCNode Title="amount Property " Url="html/0aad960c-72ff-f955-44c6-26405c621618.htm" />
+        <HelpTOCNode Title="description Property " Url="html/02f43c76-41d1-3f3c-a5b3-ef215faf7080.htm" />
+        <HelpTOCNode Title="idOrderProduct Property " Url="html/84fa1910-ec17-81a2-ae53-5dadf5a00aee.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/fba7a2fe-7085-41fe-5503-30d9b3113c10.htm" />
+        <HelpTOCNode Title="priceofsale Property " Url="html/ccfd4e1e-4f4a-155c-a2a0-644181bcc3ab.htm" />
+        <HelpTOCNode Title="refOrder Property " Url="html/5bb1eada-14f8-e25c-f690-70b889c5b7f4.htm" />
+        <HelpTOCNode Title="refProduct Property " Url="html/c4b1f6da-88d5-a26c-46d8-d54cc1d34de3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e1a1dc71-7d8b-48e8-a1da-79a08d268995" Title="OrderProduct Methods" Url="html/0e782ac1-e14c-0972-7ea0-255b6e128c87.htm">
+        <HelpTOCNode Title="insertOrderProduct Method " Url="html/e07dd597-bef9-70e1-a3b5-c57489133f74.htm" />
+        <HelpTOCNode Title="readAllOrderProduct Method " Url="html/1ff16542-b76f-21ce-aa30-c08d210b4b4f.htm" />
+        <HelpTOCNode Title="readOrderProduct Method " Url="html/305edc0d-de52-9c22-f757-ef11a5e8ead7.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6350e904-f458-4945-905a-4b5caa9acb72" Title="PaymentMethod Class" Url="html/72e3842b-53d8-ac07-3b42-8b6008428566.htm">
+      <HelpTOCNode Id="5f263d16-98f4-4257-899d-afbcbb4069b5" Title="PaymentMethod Constructor " Url="html/3aea71b4-4ed3-d31d-019e-c45601a27e83.htm">
+        <HelpTOCNode Title="PaymentMethod Constructor " Url="html/285b1b4b-7c1b-998e-d8fb-9600038249db.htm" />
+        <HelpTOCNode Title="PaymentMethod Constructor (Int32)" Url="html/d00f9635-3c62-4859-f3b0-d248263bd4f4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f0d74c58-fd90-4187-aed9-30007184ca2e" Title="PaymentMethod Properties" Url="html/c159a7bc-8194-9145-f8cc-7ff27c5ecf5d.htm">
+        <HelpTOCNode Title="idMethod Property " Url="html/7d1f561e-1064-ba68-d538-9a092bbc2c96.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/b0572467-1360-76ce-b1ab-9d031e530cd8.htm" />
+        <HelpTOCNode Title="method Property " Url="html/e6cee6d1-901d-37e3-d4c8-01c351bceb9a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d47bd57f-ce3d-4c70-8830-f779ba4b8568" Title="PaymentMethod Methods" Url="html/5271cd55-67fd-4259-a638-07ffe42ac769.htm">
+        <HelpTOCNode Title="readPaymentMethod Method " Url="html/54d07c0e-cbe8-32a3-c223-4b7115915a3a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3fdee80d-c07a-4138-a4d4-8a9d6bec0254" Title="Product Class" Url="html/4d9f0695-9a14-6b7b-1a85-8b1b6dd45848.htm">
+      <HelpTOCNode Id="de181d60-1f8d-476f-9fe8-36a03e61ec0d" Title="Product Constructor " Url="html/ec8ffa10-f182-bf60-971d-181e6051604a.htm">
+        <HelpTOCNode Title="Product Constructor " Url="html/b0ce58bd-20c5-103e-23c8-9068bf339a6b.htm" />
+        <HelpTOCNode Title="Product Constructor (Int32)" Url="html/6d9810d0-5723-db14-2d59-c99f9768136a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a7648af3-0310-4aa8-a599-05a2b6fb75a0" Title="Product Properties" Url="html/10bf9174-9ab5-070b-c540-4dee92b7215c.htm">
+        <HelpTOCNode Title="Description Property " Url="html/1f050971-d8db-f165-de27-0916484bf2fa.htm" />
+        <HelpTOCNode Title="Id_product Property " Url="html/650e0709-bbc0-ccb7-7dd4-ed01f104a467.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/8b85a9bb-9543-5b42-3597-43a1bdf16520.htm" />
+        <HelpTOCNode Title="MaterialProduct Property " Url="html/81633dd5-d6fd-1f18-226a-142d867695ce.htm" />
+        <HelpTOCNode Title="Price Property " Url="html/5d559625-991f-a52e-ae34-d8c37baf31f8.htm" />
+        <HelpTOCNode Title="SizeProduct Property " Url="html/d87893c9-d5ad-f61a-44a2-5150049c377d.htm" />
+        <HelpTOCNode Title="WholesalePrice Property " Url="html/fe0af359-6f64-121f-0d9a-c48c1aa1711d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8a3a571e-119d-48dd-ac39-7ca232a96e74" Title="Product Methods" Url="html/f2f37f02-8c67-fad7-117b-520b9fe67922.htm">
+        <HelpTOCNode Title="deleteProduct Method " Url="html/a43e57da-3273-4978-21d5-d6840501f439.htm" />
+        <HelpTOCNode Title="insertProduct Method " Url="html/11c9037e-d541-069b-a67f-32403d140d4d.htm" />
+        <HelpTOCNode Title="modifyProduct Method " Url="html/78a677ae-2e39-c04b-5f25-4c64c7ccc86c.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/432d5d51-51b4-b3f4-3dac-517ae34e5d55.htm" />
+        <HelpTOCNode Title="readProduct Method " Url="html/a49b8202-11f9-6359-2008-61bd283e2eb2.htm" />
+        <HelpTOCNode Title="readSpecificProduct Method " Url="html/2a1e1956-574d-7e63-02c9-1cb872ebc74c.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="721c075e-17a2-4615-86f4-50ee66f4e21b" Title="SizeProducts Class" Url="html/8f823657-5945-9766-ff47-ff3f9d4faafe.htm">
+      <HelpTOCNode Id="39ca0d36-4773-4a90-a23a-8f51fb800cce" Title="SizeProducts Constructor " Url="html/2f5f839b-353f-692e-a41c-5fcece4896bf.htm">
+        <HelpTOCNode Title="SizeProducts Constructor " Url="html/f3a70e17-79ca-c805-3acb-7ebb1031e8a4.htm" />
+        <HelpTOCNode Title="SizeProducts Constructor (Int32)" Url="html/bf926037-f7ce-016d-ec89-95a4c88fd2fb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1ccc4cad-1b00-4364-a3d8-eae1222acfad" Title="SizeProducts Properties" Url="html/65f0e37e-b41b-1686-3d07-01f3c3d3838b.htm">
+        <HelpTOCNode Title="id_size Property " Url="html/0d5e967c-df52-e702-cbab-206f4daf2bc2.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/7e501001-b9ba-d741-00ef-56bc89d09224.htm" />
+        <HelpTOCNode Title="messures Property " Url="html/5b400aed-b863-0ce3-f7bc-8c2d51ce4e3a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="SizeProducts Methods" Url="html/c5871c94-5cc5-1d05-7014-f33b00b3431e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="070c2bef-54e6-40dd-8296-fd8853f1dee1" Title="State Class" Url="html/106def01-2655-e53a-f859-4d2f5ab1c91d.htm">
+      <HelpTOCNode Title="State Constructor " Url="html/cac901f5-43c1-8adb-c122-3ff3261c0f15.htm" />
+      <HelpTOCNode Id="42db8f67-286f-4456-8291-2d6599b70b51" Title="State Properties" Url="html/6865801e-c9c9-13d8-4a12-ce636d74c5d8.htm">
+        <HelpTOCNode Title="id_state Property " Url="html/bdd79118-6a71-c2eb-d0ab-c4188a1a1468.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/4c0ebbed-99a1-e8a5-386f-275d2bca79a8.htm" />
+        <HelpTOCNode Title="nameState Property " Url="html/214b8a88-8748-7203-3a45-f9722cf67da1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="State Methods" Url="html/442b75eb-a35e-fc49-523d-ff81e5dee088.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="95867063-e0f0-4d13-9fa7-4ced43b3d386" Title="StatusOrder Class" Url="html/405a46ae-f495-4970-82a6-28c5789fd89c.htm">
+      <HelpTOCNode Title="StatusOrder Constructor " Url="html/8c7c2fa4-891e-cf83-26d8-b783a5e17ade.htm" />
+      <HelpTOCNode Id="d44d448a-b63a-4817-8d93-089a5ff6ec89" Title="StatusOrder Properties" Url="html/29958028-1d80-73e6-88ad-97d3565acbc6.htm">
+        <HelpTOCNode Title="confirmed Property " Url="html/4ac54ad5-dc27-9731-668a-bcac00d05912.htm" />
+        <HelpTOCNode Title="idOrderStatus Property " Url="html/1471fdf6-a9d3-ae9e-733e-e01228ea12d5.htm" />
+        <HelpTOCNode Title="invoiced Property " Url="html/dc963080-97b6-5d83-08f7-81b972d6a1a6.htm" />
+        <HelpTOCNode Title="labeled Property " Url="html/8c08a4fe-3bee-614d-7297-5e2d3a678abf.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/12bacb2b-1927-602a-7ba3-5766547ab4cc.htm" />
+        <HelpTOCNode Title="nameStatus Property " Url="html/d6e14e02-4ea1-99c2-6fbd-d0362e4391d1.htm" />
+        <HelpTOCNode Title="sent Property " Url="html/f6be0922-7cf5-21a8-c93e-a3e13ba538d3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4806176d-cef6-4a9a-8b0c-b44e13d6322a" Title="StatusOrder Methods" Url="html/2969def6-f9e8-458c-ecdb-a63b0ae988cb.htm">
+        <HelpTOCNode Title="insertStatusOrder Method " Url="html/b21e11ba-4d89-b95f-7fd2-06bdce437174.htm" />
+        <HelpTOCNode Title="readStatusOrder Method " Url="html/17b63260-7b0f-63bd-3de1-416ba31dbc2b.htm" />
+        <HelpTOCNode Title="updateConfirmed Method " Url="html/682d1807-9ff6-6a63-77d2-2751f8eef574.htm" />
+        <HelpTOCNode Title="updateInvoiced Method " Url="html/eb5cdc9a-434a-036e-21b5-27639e5b3083.htm" />
+        <HelpTOCNode Title="updateLabeled Method " Url="html/bb95b97b-428a-967e-be8f-e5329c8666cb.htm" />
+        <HelpTOCNode Title="updateSent Method " Url="html/d2a3ffc1-ea03-3cfb-107f-c565adcce7ba.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5bd850e3-1353-4ec4-b199-86ae28d43984" Title="ZipCode Class" Url="html/93f83701-a79f-f1cc-d27c-da258c5f31ca.htm">
+      <HelpTOCNode Title="ZipCode Constructor " Url="html/492062ac-1aa9-de52-3d89-18c5954dddfa.htm" />
+      <HelpTOCNode Id="623e632e-02b3-4453-8122-6bef2b8b2aab" Title="ZipCode Properties" Url="html/e9c6b5db-2c77-aca5-78d6-c3fa9c26ab27.htm">
+        <HelpTOCNode Title="id_zipCode Property " Url="html/e9250a34-650e-c4f2-e9cf-60747f71ac80.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/1e4aa710-f482-a4b3-0326-3ce9f3107130.htm" />
+        <HelpTOCNode Title="zipCode Property " Url="html/99ae7fb4-780a-9c2d-6768-09cdda6aec33.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ZipCode Methods" Url="html/049a9a18-0cb0-8f94-7cb6-b211624ac5f1.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="241e7185-4e27-4a6a-9415-1c450ed22c82" Title="Dise&#241;oERP.Domain.Manage" Url="html/9f87e2b8-6116-5e45-ebdd-7d08b75989c8.htm">
+    <HelpTOCNode Id="d3567ae0-1ece-4fdd-84f4-b17916ab25d9" Title="InvoiceManage Class" Url="html/1ade2a48-e6bf-1b62-5371-462301ca7b8b.htm">
+      <HelpTOCNode Title="InvoiceManage Constructor " Url="html/850cbba3-3c0a-4e12-ce5c-fa6bb422d2ec.htm" />
+      <HelpTOCNode Id="2da26ffd-9dae-42b6-8197-bdfe53d7f5e8" Title="InvoiceManage Methods" Url="html/04a436ce-7b25-bc16-dd9e-4a8558a8cd25.htm">
+        <HelpTOCNode Title="checkBeforeInvoiceAccounted Method " Url="html/c386c8ed-513c-7989-146d-93c548e9da3f.htm" />
+        <HelpTOCNode Title="countId Method " Url="html/a5e24251-6d8f-925d-4b36-37def9c7baad.htm" />
+        <HelpTOCNode Title="deleteInvoice Method " Url="html/d6e60c04-1b92-c25e-fe47-4594eb79041a.htm" />
+        <HelpTOCNode Title="insertInvoice Method " Url="html/a6d4885b-d142-4cc1-0cd5-2e8c4278fccf.htm" />
+        <HelpTOCNode Title="insertOrderInvoice Method " Url="html/6b765669-94bb-25a4-0683-6ca507a590ef.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/7fb9e3b9-4826-58de-6840-b0637584a93e.htm" />
+        <HelpTOCNode Title="readInfoInvoice_ToCrystalReport Method " Url="html/20ae2625-26c8-ce36-06ec-2a529470b4d3.htm" />
+        <HelpTOCNode Title="readInvoice Method " Url="html/b53d4e06-22b6-333b-3ecb-b0f3273320f5.htm" />
+        <HelpTOCNode Title="readInvoiceByOrder Method " Url="html/36e36c84-7e01-77e3-ad38-8e07a2605427.htm" />
+        <HelpTOCNode Title="readSpecificInvoice Method " Url="html/ce34e72d-bd41-c3c2-7eea-49dcf59ffd04.htm" />
+        <HelpTOCNode Title="searchIdOrder Method " Url="html/04937868-0d9a-700f-b642-15b0d812a784.htm" />
+        <HelpTOCNode Title="updateAccounted Method " Url="html/14d684ae-8fe6-807e-3add-5573899fe252.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="652bbf79-9b59-4c58-b267-b32e1ed0408f" Title="InvoiceManage Fields" Url="html/00ad6719-6aba-dcb8-2217-0afcd077ad36.htm">
+        <HelpTOCNode Title="listInvoices Field" Url="html/98302fdb-ef00-779f-3228-a4f618c4e2dd.htm" />
+        <HelpTOCNode Title="tInvoices Field" Url="html/71c984d2-cf0f-2301-2b9c-a22ab207b7f4.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="16532657-ae94-4b4f-bbcb-88e02e5fcf35" Title="OrderManage Class" Url="html/bffb4263-60ea-d46d-b647-5d6a68a1a6cd.htm">
+      <HelpTOCNode Title="OrderManage Constructor " Url="html/2506bd0b-10a6-92b9-4a0e-7e56b67fea77.htm" />
+      <HelpTOCNode Id="3a17c33b-609f-4ef8-99ec-33760b05fcfb" Title="OrderManage Properties" Url="html/1de7c5ae-7159-7c41-886d-c547b38db956.htm">
+        <HelpTOCNode Title="orderGenericList Property " Url="html/5c218192-1746-a492-513a-1aca99da4f88.htm" />
+        <HelpTOCNode Title="orderList Property " Url="html/8c88f4d1-28fa-a595-69ba-238a2c193140.htm" />
+        <HelpTOCNode Title="orderProductList Property " Url="html/7e513985-2ba1-5433-aa08-45179323264b.htm" />
+        <HelpTOCNode Title="paymentMethodsList Property " Url="html/a9b1eee0-b9bf-7163-0340-819060f12fbd.htm" />
+        <HelpTOCNode Title="tOrder Property " Url="html/24e5c7ec-0aea-f345-cdd1-a8849a46d7d8.htm" />
+        <HelpTOCNode Title="tOrderProduct Property " Url="html/894325e4-d771-458f-4227-792b729c25c9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3596a29e-5547-4abb-8e66-1b1bfcf2c0d6" Title="OrderManage Methods" Url="html/3982fac6-d33f-bb3a-83f0-03dde6749551.htm">
+        <HelpTOCNode Title="countId Method " Url="html/94fbaae3-7dbc-cf73-65e5-c3ddf2b13662.htm" />
+        <HelpTOCNode Title="deleteNoLogicOrder Method " Url="html/d9bb22a4-acf1-4091-8365-b83a68305d55.htm" />
+        <HelpTOCNode Title="deleteOrder Method " Url="html/21072cc7-1c73-90f6-3c9f-683f4a57ea6d.htm" />
+        <HelpTOCNode Title="insertOrder Method " Url="html/0fadb2bb-c73f-6465-4820-45007b7ca8a4.htm" />
+        <HelpTOCNode Title="insertOrderProduct Method " Url="html/83b66c24-7e6b-52f8-7919-c6e45f629081.htm" />
+        <HelpTOCNode Title="insertOrderProductGeneric Method " Url="html/fff313a3-23d1-cdd1-7e48-5a7167ab7bc4.htm" />
+        <HelpTOCNode Title="insertStatusOrder Method " Url="html/923b3318-fe87-71ca-04b9-08ace787eb58.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/c42ca006-921f-b34c-bd98-66ddd579de44.htm" />
+        <HelpTOCNode Title="readAllOrderProduct Method " Url="html/29c4e6ac-04c0-e39b-4164-306a8844f293.htm" />
+        <HelpTOCNode Title="readAllOrderProduct_CrystalReport Method " Url="html/1c30b437-0ed1-2d98-9607-c638c7547d08.htm" />
+        <HelpTOCNode Title="readAllPaymentMethod Method " Url="html/119d2be7-023a-0c59-560b-9f84c4279ab6.htm" />
+        <HelpTOCNode Title="readInfoOrder_ToCrystalReport Method " Url="html/164bbc53-950d-a13b-8ff6-72922e30e0dc.htm" />
+        <HelpTOCNode Title="readOrder Method " Url="html/c6d317ec-b99c-cd7f-953e-3193e47e48ff.htm" />
+        <HelpTOCNode Title="readOrderByInvoice Method " Url="html/2b0801a6-9ca0-c2b7-e6a1-c290a60daf59.htm" />
+        <HelpTOCNode Title="readOrderProduct Method " Url="html/eb136861-1f8f-4e5e-509e-0ab71fb3c623.htm" />
+        <HelpTOCNode Title="readPaymentMethod Method " Url="html/ca1f634e-1487-585e-120a-c840e84c9f40.htm" />
+        <HelpTOCNode Title="readProductOfOrder Method " Url="html/27280e62-e7db-5430-09b9-5ef139ee67fc.htm" />
+        <HelpTOCNode Title="readSpecificOrder Method " Url="html/6c2aa2b6-bfa0-dc04-1940-0c06143384df.htm" />
+        <HelpTOCNode Title="readStatusOrder Method " Url="html/84cf6f83-bf69-7cc1-df88-3788db3a1784.htm" />
+        <HelpTOCNode Title="updateConfirmed Method " Url="html/c8d408eb-0435-f035-22aa-7d785c347f17.htm" />
+        <HelpTOCNode Title="updateInvoiced Method " Url="html/f5fdd454-d709-9c0c-10b2-9c312b373e14.htm" />
+        <HelpTOCNode Title="updateLabeled Method " Url="html/ea57d3a1-04d0-1fab-b0bb-5ac2b9875258.htm" />
+        <HelpTOCNode Title="updateSent Method " Url="html/8d250568-473a-b249-321a-161998238869.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="97e73dc1-68c1-4cf4-a68a-042df119b5f8" Title="ProductManage Class" Url="html/d6d09668-5b00-23ab-e06a-351e4f3d5c36.htm">
+      <HelpTOCNode Title="ProductManage Constructor " Url="html/95db3b20-7689-6633-45cf-c82e5cf6d91e.htm" />
+      <HelpTOCNode Id="b09ef797-c2f5-4e15-b112-dc3ed67c502f" Title="ProductManage Methods" Url="html/95b8160e-f837-10b2-d875-180ff88ccb8c.htm">
+        <HelpTOCNode Title="deleteProduct Method " Url="html/3b45c080-c2ab-4c48-c885-e2d98556649d.htm" />
+        <HelpTOCNode Title="insertProduct Method " Url="html/0b9da434-2590-1e54-5b34-f1735ffe1383.htm" />
+        <HelpTOCNode Title="modifyProduct Method " Url="html/704ccc7a-12ab-912f-10ea-e44269af85cd.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/24cae0b0-ecbd-1331-46d6-69e9e91c9332.htm" />
+        <HelpTOCNode Title="readAllMaterials Method " Url="html/a3af9f61-b00c-42e1-5a18-103f8849e73f.htm" />
+        <HelpTOCNode Title="readAllMessures Method " Url="html/097c7396-b66e-7690-9f24-8643ed281195.htm" />
+        <HelpTOCNode Id="7ff0716e-625a-4e2c-b065-44d564ae4094" Title="readMaterialProduct Method " Url="html/50e905fd-1836-2573-5ac6-d1761b09a6be.htm">
+          <HelpTOCNode Title="readMaterialProduct Method (Int32)" Url="html/204d772c-bb1f-0b07-2d0c-18c97683be29.htm" />
+          <HelpTOCNode Title="readMaterialProduct Method (MaterialProducts)" Url="html/01449481-5a56-6fe9-016c-d4288b6d9fdc.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="readProduct Method " Url="html/69fd88f6-3022-7f64-3b7a-e5654185e073.htm" />
+        <HelpTOCNode Id="02681e9a-0764-479a-88c4-060560037509" Title="readSizeProduct Method " Url="html/9dc738b8-b50d-e1e5-a944-af4389dfdbc2.htm">
+          <HelpTOCNode Title="readSizeProduct Method (Int32)" Url="html/c367e522-9659-2791-e3a6-6290781ff9e7.htm" />
+          <HelpTOCNode Title="readSizeProduct Method (SizeProducts)" Url="html/b391b479-bb55-08ea-4b9b-05e26962eb0b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="readSpecificProduct Method " Url="html/bc6cc80c-4686-92d2-996c-d0d69569f4b1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="75f630e9-c4a9-4e2c-b076-f2eaa7df2392" Title="ProductManage Fields" Url="html/d59f773b-fb2d-d67a-0977-751c0c5147f3.htm">
+        <HelpTOCNode Title="listMaterialProducts Field" Url="html/c1a093cd-2cc3-7bcd-19ff-35ac55ee388c.htm" />
+        <HelpTOCNode Title="listProducts Field" Url="html/876133b5-c0c0-d606-4fed-8715eca14ee0.htm" />
+        <HelpTOCNode Title="listSizeProducts Field" Url="html/9808c8be-86bc-2ee0-73ea-74d0bc45be94.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="85b66807-4409-4f4d-96c2-5e9b0ec4bd01" Title="Dise&#241;oERP.Persistence" Url="html/a453b7cd-e7f7-7340-1652-d79357d33502.htm">
+    <HelpTOCNode Id="3d50ce20-bf7d-4df1-b02b-48e5605c09d1" Title="DataSetInvoice Class" Url="html/b842cbb9-99c9-d6ad-1197-399074911773.htm">
+      <HelpTOCNode Id="e6b1b890-bb41-41f6-9cb5-eff912a8540d" Title="DataSetInvoice Constructor " Url="html/3560d447-620e-f1c0-73f6-a6b7b436fbc7.htm">
+        <HelpTOCNode Title="DataSetInvoice Constructor " Url="html/ba6ead83-7822-3d8d-e308-e8eedf769a1d.htm" />
+        <HelpTOCNode Title="DataSetInvoice Constructor (SerializationInfo, StreamingContext)" Url="html/00b4a72c-f926-9407-3767-bf4a0b1a0c24.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8c23ce1c-6076-4bb3-ad23-88c65dda556d" Title="DataSetInvoice Properties" Url="html/3aef34c5-8bf4-1bf1-d7f5-90d839e2481b.htm">
+        <HelpTOCNode Title="Customer Property " Url="html/d348579b-8ea7-69eb-753a-318ae6b4a970.htm" />
+        <HelpTOCNode Title="Invoice Property " Url="html/b31f608f-90bb-32a2-324f-0bfa5c92b1b9.htm" />
+        <HelpTOCNode Title="Order Property " Url="html/80621d41-6f58-0a36-a15b-0ae54583a7dc.htm" />
+        <HelpTOCNode Title="OrderProduct Property " Url="html/44a8d82d-0032-598f-05b8-d423ee69cab9.htm" />
+        <HelpTOCNode Title="Relations Property " Url="html/1ca7cd59-1dbf-c93f-b783-07c82031f647.htm" />
+        <HelpTOCNode Title="SchemaSerializationMode Property " Url="html/8f8c5516-517b-3dbb-82f6-45389c4bf525.htm" />
+        <HelpTOCNode Title="Tables Property " Url="html/a4e5d696-2c61-9c90-f6ec-238710f5c028.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="44fc12d3-60d9-400f-8562-5810a55edde7" Title="DataSetInvoice Methods" Url="html/144f149b-2d86-fcfb-98d5-cd497a5d1306.htm">
+        <HelpTOCNode Title="Clone Method " Url="html/66af5f30-f559-64c3-7c80-c64ebb81f7c5.htm" />
+        <HelpTOCNode Title="GetSchemaSerializable Method " Url="html/bbf1985c-972d-2c8a-86ff-49414a170874.htm" />
+        <HelpTOCNode Title="GetTypedDataSetSchema Method " Url="html/8edab189-a439-bd59-7f51-4ff333b8ba7b.htm" />
+        <HelpTOCNode Title="InitializeDerivedDataSet Method " Url="html/80a385c5-36be-4272-fcce-e29b70da4ad5.htm" />
+        <HelpTOCNode Title="ReadXmlSerializable Method " Url="html/dfc1b162-18ea-94d6-b29c-23c02955fe64.htm" />
+        <HelpTOCNode Title="ShouldSerializeRelations Method " Url="html/6db6ebe9-6817-a365-ef08-658d39a7b291.htm" />
+        <HelpTOCNode Title="ShouldSerializeTables Method " Url="html/8ea88280-522b-014a-6bd5-8ca3cd213107.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="DataSetInvoice Events" Url="html/c85c39e4-a962-b549-1f77-ce173892b6d0.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="78e95137-060a-432c-a83b-1d2b6439e252" Title="DataSetInvoice.CustomerDataTable Class" Url="html/998a0257-6ca0-cc49-8533-3d3d5ad4f7b8.htm">
+      <HelpTOCNode Id="c179396e-3a08-42d3-b574-beca35401e30" Title="CustomerDataTable Constructor " Url="html/81d69063-f074-85e3-d303-1ebd97e4ddb0.htm">
+        <HelpTOCNode Title="DataSetInvoice.CustomerDataTable Constructor " Url="html/fa3d47ec-7227-2df1-77f9-ab75dd5f47f2.htm" />
+        <HelpTOCNode Title="DataSetInvoice.CustomerDataTable Constructor (SerializationInfo, StreamingContext)" Url="html/ff90baf5-a29a-594a-b5ce-00979a712bd3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="beeb81d0-ffd4-4fc1-8cb9-91acbd9f682a" Title="CustomerDataTable Properties" Url="html/bb9b05ca-0c52-a20b-2ff5-768bfab69b19.htm">
+        <HelpTOCNode Title="ADDRESSColumn Property " Url="html/55246d5d-90a9-0bfa-c57c-c4526f855d50.htm" />
+        <HelpTOCNode Title="CITYColumn Property " Url="html/e305b950-7e07-6f72-1559-c38a8719b91f.htm" />
+        <HelpTOCNode Title="Count Property " Url="html/cd13c679-71a5-748e-c665-f2f8a04a181f.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/767ced5d-c197-bb8b-68ac-d1a78d58c18e.htm" />
+        <HelpTOCNode Title="NAMEColumn Property " Url="html/cbb9713a-babe-a2b9-f265-92df5d9f3053.htm" />
+        <HelpTOCNode Title="NIFColumn Property " Url="html/22d8789e-430e-0394-4465-2afc96eab668.htm" />
+        <HelpTOCNode Title="PHONEColumn Property " Url="html/7d2076df-7528-c69c-08df-6825b4cea275.htm" />
+        <HelpTOCNode Title="STATEColumn Property " Url="html/07713fdd-aec7-3c95-5432-f5cb2c86ca18.htm" />
+        <HelpTOCNode Title="SURNAMEColumn Property " Url="html/a6a36fb8-9435-3e1c-66bb-4a8694e7dc0a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f20e4ffb-fbf8-44e1-8103-02e222776f04" Title="CustomerDataTable Methods" Url="html/933ddaa0-ecbf-3c25-d246-969c95b0fdb0.htm">
+        <HelpTOCNode Id="90dc2ca2-95f5-4864-b337-f6886d295c11" Title="AddCustomerRow Method " Url="html/ade9dfa7-df22-e836-5931-4a241b32eb87.htm">
+          <HelpTOCNode Title="AddCustomerRow Method (DataSetInvoice.CustomerRow)" Url="html/0d7bd8b0-32a4-58c7-9f56-2e5e4e373a00.htm" />
+          <HelpTOCNode Title="AddCustomerRow Method (String, String, String, String, String, String, String)" Url="html/3a7770bf-2383-c283-1269-5f1990758598.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Clone Method " Url="html/4587054f-80e8-52c0-1151-d6e89685b0c4.htm" />
+        <HelpTOCNode Title="CreateInstance Method " Url="html/435a4c79-afab-242c-398d-4063d508575d.htm" />
+        <HelpTOCNode Title="GetRowType Method " Url="html/f1bf2ed6-143c-dbde-e063-a4eca37eb176.htm" />
+        <HelpTOCNode Title="GetTypedTableSchema Method " Url="html/b3ff311a-cdf4-4f95-0e4f-939aa7ce2e39.htm" />
+        <HelpTOCNode Title="NewCustomerRow Method " Url="html/826ac52f-178f-0916-b937-01007cf44ac8.htm" />
+        <HelpTOCNode Title="NewRowFromBuilder Method " Url="html/c03f3351-a4ee-6790-a7c5-abffb4666553.htm" />
+        <HelpTOCNode Title="OnRowChanged Method " Url="html/9f632e8f-9108-8b31-1167-93ff1f09d39f.htm" />
+        <HelpTOCNode Title="OnRowChanging Method " Url="html/39fba72f-e52d-b5ce-d09e-9fb6ea3103aa.htm" />
+        <HelpTOCNode Title="OnRowDeleted Method " Url="html/5f18e55e-0b74-a932-eb08-d76960d67b72.htm" />
+        <HelpTOCNode Title="OnRowDeleting Method " Url="html/219a6efb-7373-5abe-3741-49c57521f34d.htm" />
+        <HelpTOCNode Title="RemoveCustomerRow Method " Url="html/9a1e1291-2dff-2224-4622-8a77f9fb997d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="55fea9c2-3f77-4949-be34-3556d80e2a6c" Title="CustomerDataTable Events" Url="html/39b6020d-2acd-7f49-0b98-8845ed5fff00.htm">
+        <HelpTOCNode Title="CustomerRowChanged Event" Url="html/858e067f-80a6-d2d9-4ab6-d2211802f80f.htm" />
+        <HelpTOCNode Title="CustomerRowChanging Event" Url="html/95af51b8-05cc-487b-35cb-9745739af814.htm" />
+        <HelpTOCNode Title="CustomerRowDeleted Event" Url="html/21aaccca-1eed-ea4c-29fe-8378a65cdc87.htm" />
+        <HelpTOCNode Title="CustomerRowDeleting Event" Url="html/c350de13-4f0d-e21e-f61a-c56e502ae19b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CustomerDataTable Fields" Url="html/5c5ba195-5732-2cbf-b1f8-fa0750bb786d.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="794eb72a-5326-4048-a744-00939e4d9380" Title="DataSetInvoice.CustomerRow Class" Url="html/5de1a335-e3c8-d6fc-0fac-aee6e3b2d5f2.htm">
+      <HelpTOCNode Id="c34f5cde-8d46-4ecb-ace3-1c22655fab1b" Title="CustomerRow Properties" Url="html/91ed3dce-1c31-24c6-4a7c-bf8e008c1817.htm">
+        <HelpTOCNode Title="ADDRESS Property " Url="html/f281af82-251d-3c10-f009-b0a485b1a6ac.htm" />
+        <HelpTOCNode Title="CITY Property " Url="html/a3fa90cc-c473-197b-8e60-b9fa4620fc77.htm" />
+        <HelpTOCNode Title="NAME Property " Url="html/6a024e83-944a-abf7-ce71-80392e40328c.htm" />
+        <HelpTOCNode Title="NIF Property " Url="html/a3f39379-3bcb-9565-7404-698e40c5dff5.htm" />
+        <HelpTOCNode Title="PHONE Property " Url="html/1b8dcb8b-7ffb-fa57-d985-380405027517.htm" />
+        <HelpTOCNode Title="STATE Property " Url="html/288ca300-76d3-fd3e-11c7-043275bbcf8b.htm" />
+        <HelpTOCNode Title="SURNAME Property " Url="html/38695721-cf41-da87-d201-5b25ac1fdb6c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f54a0262-7135-42a1-bed6-112f328b7dcf" Title="CustomerRow Methods" Url="html/cc593706-b095-50a1-7b8f-e771debe175e.htm">
+        <HelpTOCNode Title="IsADDRESSNull Method " Url="html/2802b517-5a51-3637-b2fd-2e7ea489c852.htm" />
+        <HelpTOCNode Title="IsCITYNull Method " Url="html/4c0bfeae-34ee-d65e-2945-7db73d1a0531.htm" />
+        <HelpTOCNode Title="IsNAMENull Method " Url="html/e78070c6-6980-613b-0bbe-6f29067bd8a4.htm" />
+        <HelpTOCNode Title="IsNIFNull Method " Url="html/526fc0aa-f19d-a659-04cb-011a5f5459e0.htm" />
+        <HelpTOCNode Title="IsPHONENull Method " Url="html/03664f1d-c17e-a3b8-cccc-0f8586b8104c.htm" />
+        <HelpTOCNode Title="IsSTATENull Method " Url="html/3fd534dc-a044-f659-44a1-c63f09a337d7.htm" />
+        <HelpTOCNode Title="IsSURNAMENull Method " Url="html/dc31ed4e-d1ee-c2f7-e183-46e480aaf4e3.htm" />
+        <HelpTOCNode Title="SetADDRESSNull Method " Url="html/b5fb4393-e076-39c6-62c8-b230d498c85a.htm" />
+        <HelpTOCNode Title="SetCITYNull Method " Url="html/e2fa289a-78c3-6a2a-b4ef-a6f2682fc0ef.htm" />
+        <HelpTOCNode Title="SetNAMENull Method " Url="html/c69cbd10-b6e7-1cac-f52d-68af19af226e.htm" />
+        <HelpTOCNode Title="SetNIFNull Method " Url="html/f19aec7b-a864-8b35-8854-95d9b51fab8b.htm" />
+        <HelpTOCNode Title="SetPHONENull Method " Url="html/ba749cb6-292e-d5ea-c410-7c561fe91abd.htm" />
+        <HelpTOCNode Title="SetSTATENull Method " Url="html/56fd8f87-6e60-761d-ce23-4517542e86fa.htm" />
+        <HelpTOCNode Title="SetSURNAMENull Method " Url="html/fd367c51-b073-441d-3d87-309b324d12ca.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="47f05a3d-45a8-4f37-a004-abb7b8e3f325" Title="DataSetInvoice.CustomerRowChangeEvent Class" Url="html/24deb80e-00d8-b7a5-9125-97dda59547c3.htm">
+      <HelpTOCNode Title="DataSetInvoice.CustomerRowChangeEvent Constructor " Url="html/6fcb25bb-386e-a5ca-a7e1-d4689eb85fc4.htm" />
+      <HelpTOCNode Id="64bfca7e-052b-4a16-9ff6-3f7c24698b8b" Title="CustomerRowChangeEvent Properties" Url="html/864b6993-3982-742e-cafb-c39c2eae8dde.htm">
+        <HelpTOCNode Title="Action Property " Url="html/1851a454-6e57-628c-8606-12c27172dc31.htm" />
+        <HelpTOCNode Title="Row Property " Url="html/c5a7647e-a46e-4f24-09f0-1fbf02737852.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CustomerRowChangeEvent Methods" Url="html/70fded0e-52df-8a26-76bf-e88b4afb70e8.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="DataSetInvoice.CustomerRowChangeEventHandler Delegate" Url="html/8a266443-2d5a-d85f-0b28-b6befd3acdaa.htm" />
+    <HelpTOCNode Id="f9d05fb0-fea4-4a6a-87ca-5e667b91d7de" Title="DataSetInvoice.InvoiceDataTable Class" Url="html/071d0561-c48c-1808-1a48-d393f7540d3d.htm">
+      <HelpTOCNode Id="dea03e4d-2008-4cd7-bcec-fe2f922d4fef" Title="InvoiceDataTable Constructor " Url="html/e91fd61c-7d50-015a-9eca-1f05d37658e2.htm">
+        <HelpTOCNode Title="DataSetInvoice.InvoiceDataTable Constructor " Url="html/fc0de4b0-5e87-edf1-342a-cf3b75048a29.htm" />
+        <HelpTOCNode Title="DataSetInvoice.InvoiceDataTable Constructor (SerializationInfo, StreamingContext)" Url="html/45a2909e-e6bc-27a6-558b-e1942059f2c6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e23474da-4311-4208-9e61-c7a183cfe62a" Title="InvoiceDataTable Properties" Url="html/28b1cf62-873c-fefe-db49-72dfeadd54b2.htm">
+        <HelpTOCNode Title="Count Property " Url="html/c091ae57-ad38-c3c4-dd4e-144e2663ed3b.htm" />
+        <HelpTOCNode Title="DateTimeColumn Property " Url="html/1e0261ed-b0ee-e597-42ec-32f511cc1658.htm" />
+        <HelpTOCNode Title="IdInvoiceColumn Property " Url="html/e2e2bdb1-fc84-27af-4e2a-8539078f5bc8.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/0a83231a-a7a9-8e44-ed8b-04eaa6225b1c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e4e4705e-46e2-4ce3-9a0e-a8532a95fb9c" Title="InvoiceDataTable Methods" Url="html/6d14bf2c-65ff-0c23-437f-a24dabd3865f.htm">
+        <HelpTOCNode Id="cce61ffc-c59d-4e15-9453-4a25efe24e5b" Title="AddInvoiceRow Method " Url="html/48df206d-f37d-33cd-cef2-eb1fae253d7f.htm">
+          <HelpTOCNode Title="AddInvoiceRow Method (DataSetInvoice.InvoiceRow)" Url="html/7bd2e434-29e1-232e-b3dd-aa4d2082e4aa.htm" />
+          <HelpTOCNode Title="AddInvoiceRow Method (String, String)" Url="html/96965520-8116-5d5b-a39d-1cdcee69aaaf.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Clone Method " Url="html/34012f68-4f52-3dbf-b374-138f76021b1b.htm" />
+        <HelpTOCNode Title="CreateInstance Method " Url="html/08b0f35f-7c42-80aa-d13a-2eacf3470b1d.htm" />
+        <HelpTOCNode Title="GetRowType Method " Url="html/92900515-2ed4-11d8-5cab-8d6658947f53.htm" />
+        <HelpTOCNode Title="GetTypedTableSchema Method " Url="html/15dbcb3e-9203-0678-5ecd-d0d60f0c8b4e.htm" />
+        <HelpTOCNode Title="NewInvoiceRow Method " Url="html/ed19dffd-91b7-d60b-7f5a-d7b4028a1b6d.htm" />
+        <HelpTOCNode Title="NewRowFromBuilder Method " Url="html/60bc5128-862f-05dd-5ef0-bfb69ef55f13.htm" />
+        <HelpTOCNode Title="OnRowChanged Method " Url="html/7db865eb-aa3e-aff0-af2d-c305122140d3.htm" />
+        <HelpTOCNode Title="OnRowChanging Method " Url="html/0ebae917-3b65-3ab0-3299-ca71a3c9dc2b.htm" />
+        <HelpTOCNode Title="OnRowDeleted Method " Url="html/57686fb5-1dc7-0464-70a8-d58baecb2dc5.htm" />
+        <HelpTOCNode Title="OnRowDeleting Method " Url="html/825c23cd-b48a-6cb4-e097-1187650032c0.htm" />
+        <HelpTOCNode Title="RemoveInvoiceRow Method " Url="html/933fdabf-d35a-c612-282d-747d07fb28f3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bc65b235-2cd7-4f7d-aee2-16e77483dee1" Title="InvoiceDataTable Events" Url="html/d6b47179-c0c0-8f8c-68f7-1868c3ec3919.htm">
+        <HelpTOCNode Title="InvoiceRowChanged Event" Url="html/033b9deb-29d7-53ae-1601-25900bc0ea74.htm" />
+        <HelpTOCNode Title="InvoiceRowChanging Event" Url="html/e04cd1e4-6274-85a8-949b-0b8647ec0544.htm" />
+        <HelpTOCNode Title="InvoiceRowDeleted Event" Url="html/579170dc-c638-57ec-2c5b-1e516ce03966.htm" />
+        <HelpTOCNode Title="InvoiceRowDeleting Event" Url="html/51516609-ad45-1fbe-9125-b0aa31344f20.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InvoiceDataTable Fields" Url="html/7357f474-d8d8-1c35-5d57-cb7b3c1c38d0.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="cc36daa8-32f4-4221-a35e-8d29be6eb6a5" Title="DataSetInvoice.InvoiceRow Class" Url="html/e9f4724b-253a-8ed6-5ea7-2a1a4fccf48f.htm">
+      <HelpTOCNode Id="fa887913-02fc-4f3e-babf-a8832ffeebea" Title="InvoiceRow Properties" Url="html/2838016e-bda1-c339-c8a7-869b1bfb7947.htm">
+        <HelpTOCNode Title="DateTime Property " Url="html/7afb4e5b-1a6a-4b44-b5f8-be629b992c65.htm" />
+        <HelpTOCNode Title="IdInvoice Property " Url="html/39c2d8b5-6e02-1f88-e2ad-1399353140b6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="356f53f7-adf2-49a4-94a1-99b6a94c4fd3" Title="InvoiceRow Methods" Url="html/1830e402-72c6-e37e-a1ef-b2f9558521b6.htm">
+        <HelpTOCNode Title="IsDateTimeNull Method " Url="html/8661f1f6-fe49-4bf5-805a-25aa7d6dba59.htm" />
+        <HelpTOCNode Title="IsIdInvoiceNull Method " Url="html/66a43aa6-bab0-e416-3a38-cd03b1d2d463.htm" />
+        <HelpTOCNode Title="SetDateTimeNull Method " Url="html/623f4013-4b30-587e-9386-77a695b9afbe.htm" />
+        <HelpTOCNode Title="SetIdInvoiceNull Method " Url="html/3014289f-4aed-ffc0-22f5-79550064dc1b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2d6afbf2-5db3-4f65-828a-7eab79629511" Title="DataSetInvoice.InvoiceRowChangeEvent Class" Url="html/a9a5198f-75f7-b685-3505-581710c04d4b.htm">
+      <HelpTOCNode Title="DataSetInvoice.InvoiceRowChangeEvent Constructor " Url="html/66e2cb80-0aaa-4e30-ae68-1d06b55ee2bc.htm" />
+      <HelpTOCNode Id="b47cc62a-c8b4-47d7-bee7-4f095b5a524a" Title="InvoiceRowChangeEvent Properties" Url="html/f2d3214e-8d99-99f7-d6c3-b084b118dbe4.htm">
+        <HelpTOCNode Title="Action Property " Url="html/5e142fc4-2104-3cad-41d5-a5413f7c6b35.htm" />
+        <HelpTOCNode Title="Row Property " Url="html/245e4474-b6d1-e53f-5524-e58042f70d5f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InvoiceRowChangeEvent Methods" Url="html/175f416a-05be-101c-6bbd-e058e7963c18.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="DataSetInvoice.InvoiceRowChangeEventHandler Delegate" Url="html/c0e0e8bb-066e-b182-3831-74fa0739d42c.htm" />
+    <HelpTOCNode Id="a1ac5764-937e-47fe-8ace-9438d29ad6b1" Title="DataSetInvoice.OrderDataTable Class" Url="html/3563b36a-08c9-bb34-2c63-17f9ebef701b.htm">
+      <HelpTOCNode Id="17a6c02e-ee2d-4d7b-98ce-99c9e629cced" Title="OrderDataTable Constructor " Url="html/3fd19329-bb1a-da3b-3eb3-84d8a861e61f.htm">
+        <HelpTOCNode Title="DataSetInvoice.OrderDataTable Constructor " Url="html/0a1ad1e0-5b1b-8471-d502-bf4d7a164cd3.htm" />
+        <HelpTOCNode Title="DataSetInvoice.OrderDataTable Constructor (SerializationInfo, StreamingContext)" Url="html/3522818e-11cf-3905-644c-72fcc4127395.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bed49073-353e-43a7-adaa-7da96cfdf461" Title="OrderDataTable Properties" Url="html/139f96e3-918b-d9ab-f5fd-902d0d7ea73f.htm">
+        <HelpTOCNode Title="Count Property " Url="html/66fef393-8112-7062-5e84-646cc1f67dd6.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/9d7ae579-fb31-d6b9-69e7-9de8f2a4ad23.htm" />
+        <HelpTOCNode Title="PaymentMethodColumn Property " Url="html/f6c13fb9-b03a-41e7-450d-0016e1df4959.htm" />
+        <HelpTOCNode Title="TaxColumn Property " Url="html/116dd67d-bbec-0180-7e00-de45ef173e40.htm" />
+        <HelpTOCNode Title="TotalColumn Property " Url="html/db1f5610-c49d-2003-1a71-60b51d95c8b6.htm" />
+        <HelpTOCNode Title="TotalWithTaxColumn Property " Url="html/985da588-c27f-096e-cba8-34fd0cbb90b9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a9da16c1-8f88-46aa-91d1-8082462f7270" Title="OrderDataTable Methods" Url="html/a365e36f-79a1-8147-0196-b49feb427d38.htm">
+        <HelpTOCNode Id="867995f4-07b4-47f6-b354-0ba2e29e0517" Title="AddOrderRow Method " Url="html/b8cfc147-704e-7313-66c7-db614f8344bb.htm">
+          <HelpTOCNode Title="AddOrderRow Method (DataSetInvoice.OrderRow)" Url="html/8778e113-0242-298c-63a6-a52c7991b123.htm" />
+          <HelpTOCNode Title="AddOrderRow Method (String, String, String, String)" Url="html/4bcce9be-be83-17ea-4aa2-85607cdbe583.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Clone Method " Url="html/31349b04-5955-ff33-bdce-44266e9106ba.htm" />
+        <HelpTOCNode Title="CreateInstance Method " Url="html/c0d2275b-787d-985a-f6d7-dc1907eca489.htm" />
+        <HelpTOCNode Title="GetRowType Method " Url="html/d96eac81-bb96-645a-45f8-703b8c41e8af.htm" />
+        <HelpTOCNode Title="GetTypedTableSchema Method " Url="html/b434115a-b24e-4b87-b0c3-e26008fea10d.htm" />
+        <HelpTOCNode Title="NewOrderRow Method " Url="html/15d681a5-001b-646e-5d8b-1f444ce34ac9.htm" />
+        <HelpTOCNode Title="NewRowFromBuilder Method " Url="html/8024433d-cce9-c9f2-94bb-38832e1663f6.htm" />
+        <HelpTOCNode Title="OnRowChanged Method " Url="html/f901b521-d19b-c437-3716-044591f4c1ba.htm" />
+        <HelpTOCNode Title="OnRowChanging Method " Url="html/af586c49-4f75-7630-12a2-f4c57be51e40.htm" />
+        <HelpTOCNode Title="OnRowDeleted Method " Url="html/caee5f7c-0784-b7b1-3619-4f65c08a4be3.htm" />
+        <HelpTOCNode Title="OnRowDeleting Method " Url="html/6bb1a184-2331-d1e5-a9f6-e3d290827c60.htm" />
+        <HelpTOCNode Title="RemoveOrderRow Method " Url="html/11d64b57-f60b-6c85-95b3-206f1911f41b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ac68f64a-0b88-4c1e-bcad-f33d20b34872" Title="OrderDataTable Events" Url="html/2b69eb4c-fa34-dfdc-de73-b6af8ea1a1a4.htm">
+        <HelpTOCNode Title="OrderRowChanged Event" Url="html/e8136fcd-8f9f-0127-1d20-65485e1402e3.htm" />
+        <HelpTOCNode Title="OrderRowChanging Event" Url="html/c08d1725-e38e-6750-e162-819b4a277caa.htm" />
+        <HelpTOCNode Title="OrderRowDeleted Event" Url="html/0deda6af-c09f-3017-826c-b6c5fa431a7d.htm" />
+        <HelpTOCNode Title="OrderRowDeleting Event" Url="html/0f5c2b25-7e34-6879-38c6-66194f629337.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="OrderDataTable Fields" Url="html/a24358d7-8d10-798d-bfa6-1636950ca5ea.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="48d61d61-e687-4299-b8e7-514ead6a0abe" Title="DataSetInvoice.OrderProductDataTable Class" Url="html/579e9299-2f87-3056-35d3-ad698a830d29.htm">
+      <HelpTOCNode Id="76069e54-e85a-4545-8122-c7af9075bc13" Title="OrderProductDataTable Constructor " Url="html/107887ed-27a6-4a3e-e720-a47c7245505d.htm">
+        <HelpTOCNode Title="DataSetInvoice.OrderProductDataTable Constructor " Url="html/5979914d-cbd5-e559-39d9-c949c9d76246.htm" />
+        <HelpTOCNode Title="DataSetInvoice.OrderProductDataTable Constructor (SerializationInfo, StreamingContext)" Url="html/6d365872-d3a3-f412-5f59-de614a28d9e6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9d930748-b98f-4e49-8243-30a2b566ccdd" Title="OrderProductDataTable Properties" Url="html/9b192679-263d-abc6-9a50-2c0cfafca762.htm">
+        <HelpTOCNode Title="AmountColumn Property " Url="html/b9ab1fd4-8129-cb8b-2ed4-c4d10df569d8.htm" />
+        <HelpTOCNode Title="Count Property " Url="html/e7c2007d-9e8e-89c1-d06d-c5fd62aaab39.htm" />
+        <HelpTOCNode Title="DescriptionColumn Property " Url="html/09e0f101-aa1c-6f0e-f888-99ca8582605a.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/00ac3792-2bcc-1845-2628-0542ea618986.htm" />
+        <HelpTOCNode Title="PriceOfSaleColumn Property " Url="html/1d7adb12-7a51-0c94-6400-12a5b0c348d2.htm" />
+        <HelpTOCNode Title="TotalColumn Property " Url="html/fdfda094-2950-6f3f-1af0-c9145fb70c9c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="89c6cda0-024f-4de4-94d5-87c492447269" Title="OrderProductDataTable Methods" Url="html/48a8871e-278d-c1b0-a16c-bbab5310ce1b.htm">
+        <HelpTOCNode Id="e31860bf-6c38-43fc-8195-2717096bfc73" Title="AddOrderProductRow Method " Url="html/597c4a79-7257-64c3-3cd2-a9e67e0d59df.htm">
+          <HelpTOCNode Title="AddOrderProductRow Method (DataSetInvoice.OrderProductRow)" Url="html/932d7591-db0b-1b47-c7bf-467e6e453b8a.htm" />
+          <HelpTOCNode Title="AddOrderProductRow Method (String, String, String, String)" Url="html/f608192e-a5fe-685d-ba56-e8c1dff37abb.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Clone Method " Url="html/a1e55012-9b11-e8ba-e816-31f9b5cbfc5a.htm" />
+        <HelpTOCNode Title="CreateInstance Method " Url="html/359e0bac-ea7a-7c95-e4de-c7a8ede64c84.htm" />
+        <HelpTOCNode Title="GetRowType Method " Url="html/4c4d71ac-c17a-9102-906b-3ed49dba4ada.htm" />
+        <HelpTOCNode Title="GetTypedTableSchema Method " Url="html/4d65152a-3c8d-84b4-6247-1398ac0c1217.htm" />
+        <HelpTOCNode Title="NewOrderProductRow Method " Url="html/7362201b-53d0-3822-18ce-9a6c79a1feff.htm" />
+        <HelpTOCNode Title="NewRowFromBuilder Method " Url="html/713346b7-7bd7-319b-9351-ec33d3c00fb6.htm" />
+        <HelpTOCNode Title="OnRowChanged Method " Url="html/9c0b8c7f-50be-49a9-3206-d078bc0f2fef.htm" />
+        <HelpTOCNode Title="OnRowChanging Method " Url="html/0b8504c3-3ba5-2f0e-bb97-d0b942b9a64f.htm" />
+        <HelpTOCNode Title="OnRowDeleted Method " Url="html/3e890774-7e4b-4e30-8f84-7a54c54bc894.htm" />
+        <HelpTOCNode Title="OnRowDeleting Method " Url="html/f6bc80da-a282-84ed-9c9d-002599190716.htm" />
+        <HelpTOCNode Title="RemoveOrderProductRow Method " Url="html/ab40521d-9d36-7250-63d8-7af25ae9c528.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f88309c5-a53a-41a5-87ee-a42b2d0385bc" Title="OrderProductDataTable Events" Url="html/d2d3d5f8-e8e5-fe28-0795-85ec54d2ed93.htm">
+        <HelpTOCNode Title="OrderProductRowChanged Event" Url="html/8f7d2451-cb2f-cb6d-35f4-21573f10837f.htm" />
+        <HelpTOCNode Title="OrderProductRowChanging Event" Url="html/07a658bb-ba74-562d-71ca-dc9e1a93db89.htm" />
+        <HelpTOCNode Title="OrderProductRowDeleted Event" Url="html/5d15d8e4-4384-565f-0ab6-81d02144f769.htm" />
+        <HelpTOCNode Title="OrderProductRowDeleting Event" Url="html/75fffa2a-3498-843b-3ee5-32e385b9f2aa.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="OrderProductDataTable Fields" Url="html/054cab26-3dc4-4340-f898-887f7a72a63a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0630e73f-3b80-45d1-b449-283f1ea73c93" Title="DataSetInvoice.OrderProductRow Class" Url="html/a714df8d-1e5d-1a07-0857-97b6683fa2d1.htm">
+      <HelpTOCNode Id="aaa4df5a-848b-4452-929a-2aeadc9dcfbe" Title="OrderProductRow Properties" Url="html/e548c28c-711c-ae8d-a802-8f51e6156867.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/c906e504-c343-d11d-9aa6-9594f9be0aa3.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/e23987e3-183d-cd40-8276-d87395bf4d6d.htm" />
+        <HelpTOCNode Title="PriceOfSale Property " Url="html/01f5afae-6fbc-26a4-d1df-41ec69cf1cc9.htm" />
+        <HelpTOCNode Title="Total Property " Url="html/ee71894a-4fef-a5de-f14e-c504cdf01923.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ccb06d6e-da24-42d6-9480-e9076b25b9c7" Title="OrderProductRow Methods" Url="html/40fe8cef-b736-d4db-0670-2fd3bf004429.htm">
+        <HelpTOCNode Title="IsAmountNull Method " Url="html/380db104-2095-59b5-1df0-fc657819b42b.htm" />
+        <HelpTOCNode Title="IsDescriptionNull Method " Url="html/f4e25d4b-4cfc-9a80-61a4-1c5f0c3ef148.htm" />
+        <HelpTOCNode Title="IsPriceOfSaleNull Method " Url="html/f042f440-bd1e-5f3b-9ee9-940d594064f6.htm" />
+        <HelpTOCNode Title="IsTotalNull Method " Url="html/442f6a3f-e382-a399-42a8-dd0df3f5c6fa.htm" />
+        <HelpTOCNode Title="SetAmountNull Method " Url="html/fccd66de-7e4d-b277-adb9-be555df6a3ca.htm" />
+        <HelpTOCNode Title="SetDescriptionNull Method " Url="html/fead234d-3261-cad5-145a-358baa79f8d8.htm" />
+        <HelpTOCNode Title="SetPriceOfSaleNull Method " Url="html/83878b4a-97ad-4aa1-136b-0b4c5d1c6a7b.htm" />
+        <HelpTOCNode Title="SetTotalNull Method " Url="html/262b2d7a-01d1-df4f-2775-663fec738584.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e1491aae-d2c0-4139-a26d-cdeba913e6d4" Title="DataSetInvoice.OrderProductRowChangeEvent Class" Url="html/70ab920b-d7a2-ecb2-9593-127850c26d5b.htm">
+      <HelpTOCNode Title="DataSetInvoice.OrderProductRowChangeEvent Constructor " Url="html/78552a84-b7f5-df2b-0520-375a329d8d16.htm" />
+      <HelpTOCNode Id="f36bb9db-56fc-48e5-81e4-e2cbd3a1d0fc" Title="OrderProductRowChangeEvent Properties" Url="html/0d4a9e76-c942-c81a-4e11-73cc0485a44e.htm">
+        <HelpTOCNode Title="Action Property " Url="html/c30c315e-3101-dd14-2dd1-34bd203a80b5.htm" />
+        <HelpTOCNode Title="Row Property " Url="html/fd460e44-d967-faa5-c0ed-b358063884e7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="OrderProductRowChangeEvent Methods" Url="html/ecf424a5-f4f8-77fd-f210-4c2bf5ad4fa0.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="DataSetInvoice.OrderProductRowChangeEventHandler Delegate" Url="html/14f3d3e8-2e79-050d-b7dd-d7ed40ab36fa.htm" />
+    <HelpTOCNode Id="99f10d1f-10c6-4a95-875d-4421f98b90e5" Title="DataSetInvoice.OrderRow Class" Url="html/28e046b0-9358-311e-e068-7a33be8d523f.htm">
+      <HelpTOCNode Id="d7f87906-8df2-489a-8f80-be39246de0e8" Title="OrderRow Properties" Url="html/ba16c36b-83e5-8dd1-34ef-4f654f09477c.htm">
+        <HelpTOCNode Title="PaymentMethod Property " Url="html/75813add-8726-c747-21c6-f77a2c7124b4.htm" />
+        <HelpTOCNode Title="Tax Property " Url="html/a9756f8d-bd42-e23c-b664-aa8179ac8920.htm" />
+        <HelpTOCNode Title="Total Property " Url="html/cec307d6-253c-c6b3-07ab-b9cf3083e854.htm" />
+        <HelpTOCNode Title="TotalWithTax Property " Url="html/b6056114-b010-00d9-dd33-205207cb6134.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a62cde75-b075-4c03-af8c-f7811b668e2d" Title="OrderRow Methods" Url="html/cdf9369a-90fa-7a3f-caa2-51400f92e1c9.htm">
+        <HelpTOCNode Title="IsPaymentMethodNull Method " Url="html/7166d1c2-709c-f80a-544a-6fc7570cd7a7.htm" />
+        <HelpTOCNode Title="IsTaxNull Method " Url="html/2162a33f-8789-4bba-ed1d-8a28147ebd9b.htm" />
+        <HelpTOCNode Title="IsTotalNull Method " Url="html/9604530d-6ed0-c7f2-094f-5926bbd3d94e.htm" />
+        <HelpTOCNode Title="IsTotalWithTaxNull Method " Url="html/26e3c26a-82ae-634d-cd4b-5310e4927c8d.htm" />
+        <HelpTOCNode Title="SetPaymentMethodNull Method " Url="html/b3eb4568-73d0-c390-aa0a-f249fff0ae41.htm" />
+        <HelpTOCNode Title="SetTaxNull Method " Url="html/66d2b157-dffc-265c-ccd9-a7f5239b9a34.htm" />
+        <HelpTOCNode Title="SetTotalNull Method " Url="html/0bfb9778-f541-07e0-4b1f-a71b92a0704b.htm" />
+        <HelpTOCNode Title="SetTotalWithTaxNull Method " Url="html/0659e166-8aaa-756d-b2a8-cf90ffdcfb37.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2fbd967a-8416-427f-9f50-64a104600567" Title="DataSetInvoice.OrderRowChangeEvent Class" Url="html/ff3a71e7-872f-bbb7-e3e4-ecf7371cbe72.htm">
+      <HelpTOCNode Title="DataSetInvoice.OrderRowChangeEvent Constructor " Url="html/9137a6c0-88dc-ffb7-373c-b6300d59441f.htm" />
+      <HelpTOCNode Id="74dfe296-b8b1-4b2f-81c6-7201753c92df" Title="OrderRowChangeEvent Properties" Url="html/5420f424-3c84-634e-e7f0-2cffb484e415.htm">
+        <HelpTOCNode Title="Action Property " Url="html/6aca81c8-9e20-cbea-4458-3646b6892ea4.htm" />
+        <HelpTOCNode Title="Row Property " Url="html/d6996873-0f88-9025-fd2e-256bc79794dd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="OrderRowChangeEvent Methods" Url="html/ebcf0022-7737-4f04-4731-c3d73b90bb33.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="DataSetInvoice.OrderRowChangeEventHandler Delegate" Url="html/5554a602-3fef-d5bc-2d00-6b1814f5438c.htm" />
+    <HelpTOCNode Id="54edc6e5-6334-453e-b99d-b4115f0d5d77" Title="Singleton Class" Url="html/9756f681-f8f4-491e-6c51-01174da7c094.htm">
+      <HelpTOCNode Id="fa94754a-a327-4917-8ec9-4e77120dfb80" Title="Singleton Constructor " Url="html/021cd6f5-5a51-a3a9-e0d6-223e8b37d2bd.htm">
+        <HelpTOCNode Title="Singleton Constructor " Url="html/5e36471b-c926-5677-d664-3a0e4b1ef0ef.htm" />
+        <HelpTOCNode Title="Singleton Constructor (Order)" Url="html/4914a4eb-fc48-a293-6271-90edafe71ad7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="05718cb4-efaf-4b42-85a6-06bdb87cfe1d" Title="Singleton Properties" Url="html/7758675c-0eb1-3275-e1f3-aa0a2ac67375.htm">
+        <HelpTOCNode Title="Instance Property " Url="html/3c06f85c-bff1-e424-4e92-efd0ed3c2dbb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Singleton Methods" Url="html/f4f0e14e-dd64-b15e-5bb7-9603524a9dcd.htm" />
+      <HelpTOCNode Id="dec895e3-d94e-41c3-8b7c-e469bcff326a" Title="Singleton Fields" Url="html/f2ce81d2-a3ae-4ab4-c020-aa5d7271854d.htm">
+        <HelpTOCNode Title="insertOrder Field" Url="html/537bfeee-2565-6dcc-a7ce-1daab567950d.htm" />
+        <HelpTOCNode Title="instance Field" Url="html/729eeab5-6b6d-5972-12a1-597805996361.htm" />
+        <HelpTOCNode Title="interruptor Field" Url="html/28d04a76-6e20-e36f-70d3-32da8d15198c.htm" />
+        <HelpTOCNode Title="interruptorInvoice Field" Url="html/9c17daa4-7618-1fe4-4a62-bc3a01cddfed.htm" />
+        <HelpTOCNode Title="order Field" Url="html/59a8f748-fa5b-4e64-ad47-b8227c33b358.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="4c0804b4-acfd-4e4c-981d-1800718728c1" Title="Dise&#241;oERP.View" Url="html/df011da3-b2d9-3c39-24e5-360be1b321df.htm">
+    <HelpTOCNode Id="99bdec62-3443-46d9-8417-84046ec3e410" Title="CachedCrystalReport Class" Url="html/69dd3a95-4411-6ec1-9674-676c63c9d6ac.htm">
+      <HelpTOCNode Title="CachedCrystalReport Constructor " Url="html/c35a79a8-c5a0-8c86-2895-09340e90a7ce.htm" />
+      <HelpTOCNode Id="a1750019-052c-4a43-9740-6ffd65aeecbf" Title="CachedCrystalReport Properties" Url="html/b1063a0c-9c90-8b12-d15d-ed59d56693e7.htm">
+        <HelpTOCNode Title="CacheTimeOut Property " Url="html/9961abc0-9bf5-b102-d03f-861b9fa81feb.htm" />
+        <HelpTOCNode Title="IsCacheable Property " Url="html/a675eae3-be20-5cb5-2626-16c3526d530c.htm" />
+        <HelpTOCNode Title="ShareDBLogonInfo Property " Url="html/733e056b-7921-813e-47c2-075a6bb87d8b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="39a37d34-c3dd-4dc5-89d3-7f3daa288709" Title="CachedCrystalReport Methods" Url="html/9471f898-c4cb-041c-d586-28a02ddbe3da.htm">
+        <HelpTOCNode Title="CreateReport Method " Url="html/837d7936-28ef-c662-a8bf-b6f0e6cd6510.htm" />
+        <HelpTOCNode Title="GetCustomizedCacheKey Method " Url="html/e492b924-7584-1409-b6b4-285f099d462d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CachedCrystalReport Events" Url="html/4fc8252e-b1d2-e3ad-86c3-e36df3907d2c.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="d097418b-f868-4d93-8470-662343971731" Title="CrystalReport Class" Url="html/685b4d84-4fc7-5719-e2e9-a5eca939a127.htm">
+      <HelpTOCNode Title="CrystalReport Constructor " Url="html/18e7265d-9283-2981-acad-11f11867e972.htm" />
+      <HelpTOCNode Id="49003040-965c-4345-85a9-e146b0fdd491" Title="CrystalReport Properties" Url="html/4b2a7f42-6c99-4565-3b98-62e49cc55d9e.htm">
+        <HelpTOCNode Title="FullResourceName Property " Url="html/4041b186-c891-bfbe-1010-1513acf1cf75.htm" />
+        <HelpTOCNode Title="NewGenerator Property " Url="html/692a891f-6b92-1f9a-33d5-f98b9c6b4c98.htm" />
+        <HelpTOCNode Title="ResourceName Property " Url="html/26b632f3-4601-0149-84e2-7f3d74c50369.htm" />
+        <HelpTOCNode Title="Section1 Property " Url="html/fc01e63d-d143-7a1d-6120-56bc28b42621.htm" />
+        <HelpTOCNode Title="Section2 Property " Url="html/b728e74c-9e1b-5c4f-5a4d-810468dbd677.htm" />
+        <HelpTOCNode Title="Section3 Property " Url="html/3e276689-846c-bd87-6b3c-51efaf92b2d5.htm" />
+        <HelpTOCNode Title="Section4 Property " Url="html/883d1ddb-8966-65fd-d95f-ee8b1ebee450.htm" />
+        <HelpTOCNode Title="Section5 Property " Url="html/8cdabd8e-2fac-6bc8-69f7-28e4a0674791.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CrystalReport Methods" Url="html/99e19c99-c05c-56dd-82c7-c45ea6b2c90a.htm" />
+      <HelpTOCNode Title="CrystalReport Events" Url="html/cc38925b-469f-6cd1-156f-aabbd2d7efac.htm" />
+      <HelpTOCNode Title="CrystalReport Fields" Url="html/78b67060-dafb-409a-892a-d5469c2e5821.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e7ca4ad1-a9a5-44a0-ada8-be37cef2d9b9" Title="InsertOrder Class" Url="html/57970c8f-d9f8-1ec5-b493-a1ac038b9dfc.htm">
+      <HelpTOCNode Id="f4ddd861-8455-49dd-8741-40d68a5fa74c" Title="InsertOrder Constructor " Url="html/5681469e-7a0f-12d7-78a5-beecc18fadfd.htm">
+        <HelpTOCNode Title="InsertOrder Constructor (User, Order)" Url="html/a08aa0e7-8115-ebf6-e921-82c6a2b0d038.htm" />
+        <HelpTOCNode Title="InsertOrder Constructor (User, Boolean)" Url="html/4eba9995-01b5-093d-5691-05cd5925bf53.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InsertOrder Properties" Url="html/f2b286bf-cbb6-965b-e007-4d55fcd97a94.htm" />
+      <HelpTOCNode Id="1fe243d8-7047-40cf-a225-91e157ad307e" Title="InsertOrder Methods" Url="html/9eb51742-042b-291a-8e12-f6aab6fdfc05.htm">
+        <HelpTOCNode Title="activarEsclavoGeneralProduct Method " Url="html/49eee0f7-7f29-fc99-7d8f-503540e12020.htm" />
+        <HelpTOCNode Title="activarEsclavoNormalProduct Method " Url="html/2e826183-3938-8e16-d010-57e13308a278.htm" />
+        <HelpTOCNode Title="addGeneralProduct Method " Url="html/4834eeef-70b9-1a3a-b3fa-4a498faad136.htm" />
+        <HelpTOCNode Title="addProduct Method " Url="html/53aa9335-6fbd-7b98-b08c-eb555897ad99.htm" />
+        <HelpTOCNode Title="bloquearEsclavo Method " Url="html/246620d8-68bc-f205-c9f4-bda0480429f7.htm" />
+        <HelpTOCNode Title="btn_Save Method " Url="html/e01a896c-2696-3245-9a2a-b7982eda1bc1.htm" />
+        <HelpTOCNode Title="calcularTotalPrice Method " Url="html/e7447007-9595-62ed-cd42-40e11a1a5615.htm" />
+        <HelpTOCNode Title="checkDto Method " Url="html/645b3f87-ddd4-f840-f2c2-84ff509ce981.htm" />
+        <HelpTOCNode Title="fillComboBoxCustomer Method " Url="html/f68edb1c-4a67-3374-feca-ba01246119bd.htm" />
+        <HelpTOCNode Title="fillSlaveProduct Method " Url="html/39c19f6e-9a96-fe3d-44fa-c445b9c3b77f.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/750e14ba-6b02-2ed4-9181-5cd7fa3af55c.htm" />
+        <HelpTOCNode Title="openContextMenuAddProduct Method " Url="html/7a0a3edc-bbf6-1ffe-f944-6371f2f3976c.htm" />
+        <HelpTOCNode Title="selectCustomer Method " Url="html/d41e5d05-3060-5b56-de35-4e69f5fc4e80.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InsertOrder Events" Url="html/e7cdbb90-c019-49cf-0673-dd0a3d17be80.htm" />
+      <HelpTOCNode Id="d7d85b4f-7d40-463c-afb4-ecf8d39721d9" Title="InsertOrder Fields" Url="html/1654dbcd-243d-df17-583a-4b1f6294371b.htm">
+        <HelpTOCNode Title="customerList Field" Url="html/db9f08d6-94fd-98fb-a1bf-333a2d1e4204.htm" />
+        <HelpTOCNode Title="customerOrder Field" Url="html/393a9374-df7d-6643-d90c-ab6856067a88.htm" />
+        <HelpTOCNode Title="interruptorInvoice Field" Url="html/a9195b06-194a-2ee3-20dd-6d5a8f0ed48c.htm" />
+        <HelpTOCNode Title="interruptorModify Field" Url="html/61960e15-edf0-ec87-9556-584393621789.htm" />
+        <HelpTOCNode Title="interruptorTipoProducto Field" Url="html/5fcabe0a-c85f-7c89-cf4b-b1c581b8d314.htm" />
+        <HelpTOCNode Title="order Field" Url="html/0600f5de-21a5-88c9-bca1-1e11fd03ac8a.htm" />
+        <HelpTOCNode Title="orderGenericsList Field" Url="html/4dd38c99-ce19-4a17-5fda-7dd8585dea27.htm" />
+        <HelpTOCNode Title="orderProductsList Field" Url="html/fe5a4ae0-da67-4b68-191b-3cb55e7d3c4d.htm" />
+        <HelpTOCNode Title="paymentMethodList Field" Url="html/00b1b402-fcd2-de60-fa79-ed3c16e2e9eb.htm" />
+        <HelpTOCNode Title="product Field" Url="html/857e5731-e29d-8248-56b1-a1765d010a2f.htm" />
+        <HelpTOCNode Title="user Field" Url="html/2576ea4f-edef-cbeb-cf75-d1b92abfc666.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1fba4e1d-789f-4835-b9e4-15182199c8d0" Title="InsertUser Class" Url="html/81e70d7c-5287-67ed-5694-7e761d0bf66e.htm">
+      <HelpTOCNode Title="InsertUser Constructor " Url="html/f1dab949-0e85-1164-f718-74ffb546de1e.htm" />
+      <HelpTOCNode Title="InsertUser Properties" Url="html/6f3e0132-0606-5977-c365-704981921456.htm" />
+      <HelpTOCNode Id="1ba32fa8-7e0d-4dd8-9a56-f88fb1216628" Title="InsertUser Methods" Url="html/27a23adc-dc87-a3ed-07cc-b3d62e019795.htm">
+        <HelpTOCNode Title="checkNameUser Method " Url="html/c2fc7a1e-c02b-e1e4-3407-085633dadee5.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/3d61a1cd-7c88-f758-2b0f-9402df3b447f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InsertUser Events" Url="html/a611b498-aa81-0201-6427-522c1c1ed332.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b04726b7-23fa-495c-8b2e-ef57af932ee2" Title="MainWindow Class" Url="html/f0062b6d-5dbe-6308-3355-e54a69ab46e7.htm">
+      <HelpTOCNode Id="e64b25f9-a5ae-47e5-a31f-d6bf65f0a5f8" Title="MainWindow Constructor " Url="html/4b384999-c207-d5b7-5e78-9d40dc2aa853.htm">
+        <HelpTOCNode Title="MainWindow Constructor (Int32)" Url="html/c341add8-3075-e0fe-1dda-fdd5675eac4e.htm" />
+        <HelpTOCNode Title="MainWindow Constructor (User)" Url="html/c4548d24-e306-a943-aab0-221510e670ac.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainWindow Properties" Url="html/ca8806f8-1fee-6730-25ab-b016bd9c3d7c.htm" />
+      <HelpTOCNode Id="59b8a781-de08-437c-9646-fcbe012d67f5" Title="MainWindow Methods" Url="html/ae88207d-07e0-f93d-b76d-6aaf948aac81.htm">
+        <HelpTOCNode Title="btnDeleteInvoice Method " Url="html/4a308985-20e4-ea5a-00c7-14b5f9bd7786.htm" />
+        <HelpTOCNode Title="btnNewInvoice Method " Url="html/19aab10a-aace-97d9-a51a-911240d23b77.htm" />
+        <HelpTOCNode Title="checkAddUser Method " Url="html/4525db9f-decd-da5e-00cd-6e46480c7b64.htm" />
+        <HelpTOCNode Title="checkDelete Method " Url="html/f530c709-418a-c693-a784-e59431e1b307.htm" />
+        <HelpTOCNode Title="checkModify Method " Url="html/3dcd3006-7908-ed87-30c0-998515d3898c.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/e3147e34-4c1e-4109-8f7f-021679b249ec.htm" />
+        <HelpTOCNode Title="selectCustomerOrder Method " Url="html/c2236380-8e18-b29a-8cee-3ae449fe8a44.htm" />
+        <HelpTOCNode Title="selectProductOrder Method " Url="html/cd57089c-3815-f42b-58a8-d894f2e309ce.htm" />
+        <HelpTOCNode Title="setNameDate Method " Url="html/e18a1c31-591e-908d-8a10-1057924bcc62.htm" />
+        <HelpTOCNode Title="updateListInvoices Method " Url="html/4e2f7619-d8ac-5132-6439-97e8f1c4a0e6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainWindow Events" Url="html/22de0e7b-616d-727d-d6a9-1af9b2a986ec.htm" />
+      <HelpTOCNode Id="72b94afc-0864-471d-80e3-13b3f7753b72" Title="MainWindow Fields" Url="html/48505de2-799f-621c-a693-915c675d470f.htm">
+        <HelpTOCNode Title="customerSelected Field" Url="html/439abc5f-07fc-be15-aca0-43ee6f2a4240.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0424ba83-b998-4401-acb0-f55ace9751c2" Title="ModifyUser Class" Url="html/c19a19f8-b92c-d642-c1fd-57244d21b7c4.htm">
+      <HelpTOCNode Title="ModifyUser Constructor " Url="html/02c8a6ec-8aea-221e-8ca1-d1e23d2206a5.htm" />
+      <HelpTOCNode Title="ModifyUser Properties" Url="html/4b6a99a0-5e57-9b5a-bae8-d2f567056566.htm" />
+      <HelpTOCNode Id="213b0a6b-274b-41fa-9f3b-d820dd529592" Title="ModifyUser Methods" Url="html/61758468-8dcb-2977-637a-642d7ee99555.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/771e66ff-a2e2-f270-ef18-422363c259dd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ModifyUser Events" Url="html/ba98b459-c1c4-ffa9-4c19-f57f2b9c4aa4.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1d1ef968-5b55-4ff7-8f43-56b802a06d1a" Title="ViewReportInvoice Class" Url="html/a04ec27c-426b-cdde-0165-f8031289483c.htm">
+      <HelpTOCNode Title="ViewReportInvoice Constructor " Url="html/a227b981-969e-fe76-975e-f5c97a8a5207.htm" />
+      <HelpTOCNode Title="ViewReportInvoice Properties" Url="html/feb88f8b-7f4d-1b4e-2dd0-1c3595fa78bf.htm" />
+      <HelpTOCNode Id="9b97f1c4-3c81-4080-91df-3e20c8721426" Title="ViewReportInvoice Methods" Url="html/fb1e0d3c-cf00-72f1-e6da-6332759658be.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/4542e2b3-efb5-6604-9dbc-62f575bcb602.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ViewReportInvoice Events" Url="html/48977743-5eac-8615-ebfd-f0b1a951e7f4.htm" />
+      <HelpTOCNode Id="9d33d232-80cd-4103-8e34-8f613a7d84e0" Title="ViewReportInvoice Fields" Url="html/ddc4ea91-ee62-022e-973c-f6f149c43d3b.htm">
+        <HelpTOCNode Title="order Field" Url="html/ad91dca2-0a0d-1be9-acdf-5d54070eb4f3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0b168a67-31fa-4a60-8b0c-cbe97a8a100e" Title="LITTLERP.Domain" Url="html/2d824167-ca5f-9a59-ec93-8c10d4bc5a14.htm">
+    <HelpTOCNode Id="68bc47c5-b95c-4c43-9317-8039449e7e89" Title="Customer Class" Url="html/75aebe54-dc0b-e463-b15c-513bef676151.htm">
+      <HelpTOCNode Id="c204f7de-07ab-45dc-80a9-848b8b1f2c77" Title="Customer Constructor " Url="html/843441e7-a570-c4a7-4905-4eda238702ee.htm">
+        <HelpTOCNode Title="Customer Constructor " Url="html/cdcd8883-0bec-41c0-99d7-f5fea7a07574.htm" />
+        <HelpTOCNode Title="Customer Constructor (Int32)" Url="html/b2738312-438c-505e-387d-0c5024394bef.htm" />
+        <HelpTOCNode Title="Customer Constructor (Int32, String, String, String, String, Int32, Int32, String)" Url="html/29922b02-98b6-2c06-9dae-6489093c07cc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5690d18a-4fd0-4d62-bbb2-4c7edce0134b" Title="Customer Properties" Url="html/6f0fcdd4-4001-931c-10f4-3a943e58dc52.htm">
+        <HelpTOCNode Title="address Property " Url="html/b59c189f-43bd-ac4d-fb2f-b4a5f02997ae.htm" />
+        <HelpTOCNode Title="city Property " Url="html/d01a23e0-35f8-3e8f-b588-f91c60e06b34.htm" />
+        <HelpTOCNode Title="email Property " Url="html/9f708110-dfdc-926f-78dd-a35ffdb0f5e1.htm" />
+        <HelpTOCNode Title="idCustomer Property " Url="html/a5c91173-f1ef-5bae-aa5e-32f5a7124a64.htm" />
+        <HelpTOCNode Title="name Property " Url="html/b5b73865-f539-aeb2-a043-79ee1b940890.htm" />
+        <HelpTOCNode Title="NIF Property " Url="html/7f72e925-aa4d-13ea-a9db-ffabd27ca383.htm" />
+        <HelpTOCNode Title="phone Property " Url="html/bf2a38b9-5bc1-a854-015d-79b64b186bab.htm" />
+        <HelpTOCNode Title="ref_zip_code Property " Url="html/bf3f750f-c878-ff16-0469-2d42d8bfb8d5.htm" />
+        <HelpTOCNode Title="region Property " Url="html/ed2d8a13-c0be-db0b-285a-3d203ea5b077.htm" />
+        <HelpTOCNode Title="state Property " Url="html/7cef6c7d-b7c3-3c12-7ca6-0b9d9dab9a3b.htm" />
+        <HelpTOCNode Title="surname Property " Url="html/b85ab431-7dc8-da3e-14d6-4408d838c906.htm" />
+        <HelpTOCNode Title="zipcode Property " Url="html/6cf1c848-dd08-cd65-35c7-d189d7a34223.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ac7de7d7-4cac-424f-ab89-e730ad059b24" Title="Customer Methods" Url="html/715d534b-1052-f962-346f-9ab76a6c24aa.htm">
+        <HelpTOCNode Title="checkCustomer Method " Url="html/c5eb6d97-7466-5d5e-7a56-df1963aa5480.htm" />
+        <HelpTOCNode Title="deleteCustomer Method " Url="html/41ddc2aa-a941-0346-aa0e-b2496fc2a05f.htm" />
+        <HelpTOCNode Title="insertCustomer Method " Url="html/a48a6d7d-3a88-d788-6fa7-3f7daae565a6.htm" />
+        <HelpTOCNode Title="modifyCustomer Method " Url="html/3f0e0d7e-9569-9b47-7676-c16b19de02b5.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/619163cf-3d6e-9ad6-ec78-d335c8baadf9.htm" />
+        <HelpTOCNode Title="readCustomer Method " Url="html/f64289bf-1b50-c14b-6be1-32bb454ffbc3.htm" />
+        <HelpTOCNode Title="readSpecificCustomer Method " Url="html/cdf6e6d9-47c8-efb2-bcdc-0c92ebf42ef2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="606c052e-109d-4078-a9b6-ef732d245084" Title="Customer Fields" Url="html/af75d617-77f7-e875-881a-d07e30731223.htm">
+        <HelpTOCNode Title="manage Field" Url="html/a1eb6eb1-dd27-377b-eefc-83ac08ba6b5f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8068f2a1-4e7e-42d9-a902-fce25963e2e9" Title="Region Class" Url="html/1f1a68f9-3826-ccfe-93d9-93faa97f5464.htm">
+      <HelpTOCNode Title="Region Constructor " Url="html/c4092ad7-4361-138c-33cc-01f5be673f1f.htm" />
+      <HelpTOCNode Id="c45b5049-dc60-47f6-9ada-354927845b56" Title="Region Properties" Url="html/5845d874-778b-35c6-2937-354dbb5eb22c.htm">
+        <HelpTOCNode Title="id_region Property " Url="html/aa175176-99c0-fe6f-cb27-66c9857ad75b.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/1e951bc6-0e3a-e857-b41e-b1fafcf8a13f.htm" />
+        <HelpTOCNode Title="nameRegion Property " Url="html/4bbcaf46-f797-c22f-a26c-3867c77b7733.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Region Methods" Url="html/914a4fd4-c389-8ac1-f62c-6051a722dfab.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a78a6655-0daa-46f2-8cd9-654b027dead8" Title="Role Class" Url="html/ee75b2c8-5f2e-85d0-da1d-a250721e2ca2.htm">
+      <HelpTOCNode Id="8f621760-19a8-49ba-a806-9f622cfb8ff9" Title="Role Constructor " Url="html/00c31845-62cd-6596-5d08-acee9234affb.htm">
+        <HelpTOCNode Title="Role Constructor " Url="html/e91dfda4-7342-750c-a8ed-948f427aba6e.htm" />
+        <HelpTOCNode Title="Role Constructor (Int32)" Url="html/b4d1a580-97d6-6f40-0bdc-77f10d897cab.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a3f2c04a-0db6-4507-8d33-b65c477d741b" Title="Role Properties" Url="html/89c25680-b57f-20cd-3736-036385905f1b.htm">
+        <HelpTOCNode Title="description Property " Url="html/74c6472c-f573-be21-d56a-d5953620de64.htm" />
+        <HelpTOCNode Title="id_role Property " Url="html/a78e9965-df3d-257f-dc10-efb456cf25b8.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/c50b2ac9-0d14-8af1-601d-90f94eaef088.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0d179956-0d8c-45be-a6f8-28a255dd4482" Title="Role Methods" Url="html/8a18a5e0-8e01-073a-140f-45c8f040bd21.htm">
+        <HelpTOCNode Title="readAll Method " Url="html/127b02de-7482-523d-432c-0c8ce85e1940.htm" />
+        <HelpTOCNode Title="readRole Method " Url="html/34bb9317-6c42-670e-c807-09904630a8aa.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/5367f86c-b042-20b1-2036-0b3aa557eade.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="84490e63-fbf7-4d19-bb9c-07b6c98cbf93" Title="User Class" Url="html/c5f27961-e131-35e5-732a-6ff3ab02cbf6.htm">
+      <HelpTOCNode Id="579f23a6-0900-4b23-86d7-6c3a5690c6ab" Title="User Constructor " Url="html/77e89351-3af0-20ab-352b-e5475ade6ff3.htm">
+        <HelpTOCNode Title="User Constructor " Url="html/0fdd556e-67fe-8ba8-8427-3f2bcd84ed15.htm" />
+        <HelpTOCNode Title="User Constructor (Int32)" Url="html/61684373-3669-d495-3fa2-f2673dff5563.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d096401a-2b39-492c-8d3e-34f9e610dffb" Title="User Properties" Url="html/7fe43714-b523-4135-dc58-fd8e4c6248f4.htm">
+        <HelpTOCNode Title="id_user Property " Url="html/8445b278-6d9c-ef27-5291-beff7ad3df10.htm" />
+        <HelpTOCNode Title="listPermissions Property " Url="html/bef315a3-5d52-0649-7f02-8e0c65eef4e2.htm" />
+        <HelpTOCNode Title="manage Property " Url="html/f8c329fa-b70f-eb66-3c48-e63023856a77.htm" />
+        <HelpTOCNode Title="name Property " Url="html/33705b5e-5d66-ed5e-bb33-ee3e06ea066a.htm" />
+        <HelpTOCNode Title="password Property " Url="html/c839be6e-e1b7-3b79-136d-81fba4997461.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="97784cdd-724b-4403-8283-918377f74a07" Title="User Methods" Url="html/f4a19393-6356-b235-a0ce-2ceeb910d5a5.htm">
+        <HelpTOCNode Title="check Method " Url="html/7b0f7a71-032f-ca16-7dad-ef4e3ddfbbf0.htm" />
+        <HelpTOCNode Title="checkUserRole Method " Url="html/91dfb249-b977-a98e-0095-e89499afb7b9.htm" />
+        <HelpTOCNode Title="delete Method " Url="html/17d68b5c-516a-0b79-f81c-ab33a356ebb5.htm" />
+        <HelpTOCNode Title="deleteUserRole Method " Url="html/331930c7-f96c-c707-1ba4-feae8d394e5b.htm" />
+        <HelpTOCNode Title="insert Method " Url="html/886958aa-9aa4-fe2c-5193-ce48c4f2f080.htm" />
+        <HelpTOCNode Title="insertUserRole Method " Url="html/21b41f6f-6737-be48-273a-7bc7ea743dfa.htm" />
+        <HelpTOCNode Title="modifyUser Method " Url="html/0288552f-309e-9cee-3b1f-5f5b80c9e862.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/9bb47292-1198-5ac6-978d-f00aaf5adcba.htm" />
+        <HelpTOCNode Title="readIdUser Method " Url="html/9886efc4-2b9d-e1ef-c767-6ad1e0b141e5.htm" />
+        <HelpTOCNode Title="readPermissions Method " Url="html/57d2c566-5fe9-7884-bb9c-52416cf1f456.htm" />
+        <HelpTOCNode Title="readSpecificUser Method " Url="html/a2f640ef-57c7-9106-7f55-b545c314acce.htm" />
+        <HelpTOCNode Title="readUser Method " Url="html/455bde96-2149-ec44-d0bd-263c3c6220b0.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="42c5302c-b9d3-43c3-91ce-74e440789e3f" Title="LITTLERP.Domain.Manage" Url="html/7d16cdc5-79ef-b7b4-593d-adaf9bfd61d5.htm">
+    <HelpTOCNode Id="1a590c40-fe24-4a99-b3d4-fc55876c4191" Title="CustomerManage Class" Url="html/492f6f7e-85a3-af84-247f-364c921bd62d.htm">
+      <HelpTOCNode Title="CustomerManage Constructor " Url="html/ad9a817e-c06c-c889-f912-f691ea5f370d.htm" />
+      <HelpTOCNode Id="9fea06ba-08f2-4683-bba2-640aa1016a8d" Title="CustomerManage Properties" Url="html/2c2cd7d7-478d-152a-d1c5-b26376f98702.htm">
+        <HelpTOCNode Title="listCities Property " Url="html/a1e7d428-11d5-9e43-e91d-cfec121f478a.htm" />
+        <HelpTOCNode Title="listCustomer Property " Url="html/c69cce3e-8734-c3e3-ee02-171f07b977de.htm" />
+        <HelpTOCNode Title="listRegion Property " Url="html/1057428e-9ff4-2fec-aa8b-93dddc3c6062.htm" />
+        <HelpTOCNode Title="listStates Property " Url="html/1a238794-812d-9ee8-633e-5781da935a8a.htm" />
+        <HelpTOCNode Title="listZipCode Property " Url="html/2aff5614-46cc-814a-622d-e000606de833.htm" />
+        <HelpTOCNode Title="tcustomers Property " Url="html/c06db1c0-f811-675b-be04-4b85f93ff7c1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7b273576-7939-433c-9c31-acb672ccae68" Title="CustomerManage Methods" Url="html/39593705-5769-7acd-a908-585857e7fcf0.htm">
+        <HelpTOCNode Title="checkCustomer Method " Url="html/1a4feac8-fc86-f604-bd3c-0755080bedd5.htm" />
+        <HelpTOCNode Title="checkZipCode Method " Url="html/ad77de2a-b170-2e04-ef48-17bbc147b1fc.htm" />
+        <HelpTOCNode Title="deleteCustomer Method " Url="html/2f3b3c6a-0034-1517-a238-bba26b24faad.htm" />
+        <HelpTOCNode Title="fillWithZipCode Method " Url="html/a7a658aa-6748-cdc8-2582-99a94f29fc65.htm" />
+        <HelpTOCNode Title="getCityWithRef Method " Url="html/56bedc39-9bb9-e843-41a0-b07698a2e90b.htm" />
+        <HelpTOCNode Title="getRegionWithRef Method " Url="html/38e64ca3-c086-c74c-b1ab-7df0a634e25b.htm" />
+        <HelpTOCNode Title="getStateWithRef Method " Url="html/5af269df-c652-f3d5-ceee-4be6f383427e.htm" />
+        <HelpTOCNode Title="getZipCodeWithRef Method " Url="html/369b277f-3ac0-b43b-34f4-c11d6e4678a0.htm" />
+        <HelpTOCNode Title="insertCustomer Method " Url="html/02308e99-6bda-de25-f688-1635c6c1b304.htm" />
+        <HelpTOCNode Title="modifyCustomer Method " Url="html/36fc4968-f1f2-9dde-65bb-c49f6dc9a36e.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/123a9393-f8ed-3a9e-26b7-9124ba43981a.htm" />
+        <HelpTOCNode Title="readAllRegions Method " Url="html/8aea062a-22b2-acd9-0772-f474b4dec781.htm" />
+        <HelpTOCNode Title="readCities Method " Url="html/f2b6f7a0-3085-1405-539f-bef2818c1c88.htm" />
+        <HelpTOCNode Title="readCustomer Method " Url="html/bf0963d7-5066-8d0a-84af-0448b6280bdf.htm" />
+        <HelpTOCNode Title="readCustomerByOrder Method " Url="html/b920b4f3-a6a1-4026-c8e9-cf6dff97f56f.htm" />
+        <HelpTOCNode Title="readSpecificCustomer Method " Url="html/87e7f8df-bc12-8a91-7a0e-48766ed3058e.htm" />
+        <HelpTOCNode Title="readStates Method " Url="html/0548861b-57b3-2ee8-ad4f-7b11c9889fb7.htm" />
+        <HelpTOCNode Title="readZipCodes Method " Url="html/9cb434f8-b545-13c1-9eec-005f4666dec2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0ae71df8-71a4-4399-ac43-2ac304ef21ee" Title="RoleManage Class" Url="html/c33467a7-d5c7-600a-658d-6e8ebe0c05bb.htm">
+      <HelpTOCNode Title="RoleManage Constructor " Url="html/08463158-f4fc-ec3e-28c6-b266ccd6d808.htm" />
+      <HelpTOCNode Id="a310064f-f2fb-45d0-8536-4272a775cd9e" Title="RoleManage Properties" Url="html/f0213c4f-842d-f580-172f-f09d1310906f.htm">
+        <HelpTOCNode Title="list Property " Url="html/a12f573f-bc1c-5fa2-e08e-06ad79b9c6d9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="35a2e53e-7514-48bb-9831-d5c05d63e6be" Title="RoleManage Methods" Url="html/c1e73c24-3972-41d2-ce41-81694ee35731.htm">
+        <HelpTOCNode Title="readAll Method " Url="html/6f3c14e9-f855-c334-6988-8ac8ffbdbe8d.htm" />
+        <HelpTOCNode Title="readRole Method " Url="html/411c51c6-62f7-b412-539d-922851d402a4.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="661dd6b5-e869-426a-9907-0706b898e332" Title="UserManage Class" Url="html/f8ef33a0-2a07-107e-2d22-7e0d84bd9a56.htm">
+      <HelpTOCNode Title="UserManage Constructor " Url="html/6d92ba77-eeb7-c366-4340-4d08dbdf41d5.htm" />
+      <HelpTOCNode Id="66f686a0-fcec-4ca9-837b-e680c5a61031" Title="UserManage Properties" Url="html/eff6bbeb-f6fd-5a7b-5e2a-443f73423bce.htm">
+        <HelpTOCNode Title="list Property " Url="html/021b1576-fc32-104f-fd40-ec36215e2f88.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b1b364c0-2353-4ccc-94de-e1f79ac89775" Title="UserManage Methods" Url="html/04034ff6-aaa0-9bed-6fe1-1be5e6924d20.htm">
+        <HelpTOCNode Title="checkUser Method " Url="html/bb2b9297-df46-7edf-4762-42953be572c5.htm" />
+        <HelpTOCNode Title="checkUserRole Method " Url="html/e74f08be-b930-d60c-9b44-f75940c3ce34.htm" />
+        <HelpTOCNode Title="deleteUser Method " Url="html/8879eefe-a88a-d723-64cd-0bf3bd4ef2c9.htm" />
+        <HelpTOCNode Title="deleteUserRole Method " Url="html/086915a5-707b-7013-a294-7f93495e26d2.htm" />
+        <HelpTOCNode Title="insertUser Method " Url="html/376e1d56-c36b-7083-0556-6571efa077c1.htm" />
+        <HelpTOCNode Title="insertUserRole Method " Url="html/c9f755e6-1355-8d8d-3658-9a09debbde7f.htm" />
+        <HelpTOCNode Title="modifyNameUser Method " Url="html/d31567f1-4aa1-1756-3777-c2ad08fc63c7.htm" />
+        <HelpTOCNode Title="modifyUser Method " Url="html/132a8ef2-a886-5ad1-7f56-5a0055f77337.htm" />
+        <HelpTOCNode Title="readAll Method " Url="html/3a3b1af0-f2d1-1b0b-ae48-6f78eb4ae785.htm" />
+        <HelpTOCNode Title="readIdUser Method " Url="html/071a5d4c-2cf3-3d22-1e64-cd68f094635d.htm" />
+        <HelpTOCNode Title="readPermissions Method " Url="html/936aabf7-206d-ce96-92d8-c49d2617bba1.htm" />
+        <HelpTOCNode Title="readSpecificUser Method " Url="html/9574ae36-c01b-1c30-e64c-0cc7e835244a.htm" />
+        <HelpTOCNode Title="readUser Method " Url="html/9b53d18d-9fff-c2d6-c2ed-e7ceefd7f640.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="985a7b25-13a7-43e7-ac90-b81ef6566d91" Title="LITTLERP.Persistence" Url="html/e2b1c291-4e8c-f364-117a-b54ff1db87ef.htm">
+    <HelpTOCNode Id="8638db7c-c04b-45a0-9cd9-e55c90539370" Title="ConnectOracle Class" Url="html/4571e64c-cde9-b31d-e602-993feff6bd86.htm">
+      <HelpTOCNode Title="ConnectOracle Constructor " Url="html/818f0951-6b46-c44b-7055-94bb27665050.htm" />
+      <HelpTOCNode Id="350bdfc4-17dc-4699-abbd-b45a70dad39d" Title="ConnectOracle Methods" Url="html/0bd8a8d1-4a8d-6d17-6759-f3a48e85495b.htm">
+        <HelpTOCNode Title="DLookUp Method " Url="html/89a5e3e8-2dc4-514c-fda0-29cd12828643.htm" />
+        <HelpTOCNode Title="getData Method " Url="html/d20f1f1d-f53b-c9ba-dffb-4f66caffba51.htm" />
+        <HelpTOCNode Title="setData Method " Url="html/8c1729a3-9cb7-e295-3fef-4a2b43efc040.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
