@@ -1,3 +1,3 @@
 # Dev-ERP
 This project was developed for the management of a small business. Here I'm aporting all her interfaces, with absolute utility.  It has been developed in C# .NET with WPF using the Material Design theme, connecting to a local database launched through a Docker container, in which each of the data was obtained. Without overlooking its development in MVC, in addition to the use of the Master-Slave Pattern in some of its windows and the generation of automatic invoices with SAP Crystal Reports.                           
-[https://github.com/dbustosg/Dev-ERP/blob/main/Assets/portadaDevErp.PNG]
+(https://github.com/dbustosg/Dev-ERP/blob/main/Assets/portadaDevErp.PNG)
